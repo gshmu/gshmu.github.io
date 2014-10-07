@@ -1,4 +1,5 @@
 title: MySQL Notes
+date: 2014-08-15
 categories: MySQL
 tags: [MySQL]
 ---

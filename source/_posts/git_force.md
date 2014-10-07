@@ -1,4 +1,5 @@
 title: push -f
+date: 2014-09-18
 categories: Git
 tags: [git, force]
 ---

@@ -1,4 +1,5 @@
 title: AND & OR
+date: 2014-08-08
 categories: python
 tags: [python, bool]
 ---

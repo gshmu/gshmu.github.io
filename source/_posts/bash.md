@@ -1,4 +1,5 @@
 title: bash
+date: 2014-09-05
 categories: Linux
 tags: [bash]
 ---
