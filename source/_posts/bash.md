@@ -46,9 +46,9 @@ alias gf='git fetch'
 alias gl='git log'
 alias gs='git status'
 alias go='git checkout'
-
+  
 export PS1="\[\e[00;37m\]\n\[\e[0m\]\[\e[00;34m\]^_^\[\e[0m\]\[\e[01;31m\]:\[\e[0m\]\[\e[00;36m\]\w\[\e[0m\]\[\e[01;33m\]\\$\[\e[0m\]\[\e[00;37m\] \[\e[0m\]"
-
+  
 . /usr/share/bash-completion/completions/git  # about my git completions
 __git_complete ga _git_add
 __git_complete gb _git_branch
