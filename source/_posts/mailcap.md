@@ -7,7 +7,7 @@ tags: [config]
 
 ### `The Way to fix it`
 Ubuntu 下，命令行执行：
-```
+```bash
 echo 'application/octet-stream; nautilus --no-default-window --no-desktop %s; test=test -n "$DISPLAY"' >> ~/.mailcap
 ```
 其实就是向家目录下`.mailcap`文件追加上述命令单引号内中的内容。（文件不存在则新建）

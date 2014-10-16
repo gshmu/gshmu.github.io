@@ -6,7 +6,7 @@ tags: [python, tuple]
 在python中元组tuple是不能改变的，列表和字典是可以改变的。
 
 ### `change`
-```
+```python
 In [1]: l = [1, 2]
  
 In [2]: d = {'a':'aaa', 'b':'bbb'}

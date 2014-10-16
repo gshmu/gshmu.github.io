@@ -1,7 +1,7 @@
 title: bash
 date: 2014-09-05
 categories: Linux
-tags: [bash]
+tags: [bash, config]
 ---
 my bash
 
@@ -37,7 +37,7 @@ my bash
 * `|`: 管道，不解释了。`*****`五星级。
 
 ## .bashrc at Ubuntu
-```
+```bash
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit'
