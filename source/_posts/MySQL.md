@@ -3,51 +3,76 @@ date: 2014-08-15
 categories: MySQL
 tags: [MySQL]
 ---
-MySQL 备忘，已经用到的一些，方式信马游缰。一句话总结：那些我用到的MySQL语句。
+MySQL 备忘，已经用到的一些命令，方式信马游缰。一句话总结：那些我用到的MySQL语句。
 
 ## MySQL
-`$ mysql -u root -p` shell登录，‘-u’用户‘root’；‘-p’需要密码。
+``` SQL shell登录，‘-u’用户‘root’；‘-p’需要密码。
+$ mysql -u root -p
+```
 
-## new db
-代码命令中含有`_`的，很多时候是需要你修改的。但也有不是的，如`set xx_xx = 0`，你需要修改`0 or 1`。
+### New db
+* Create database
+```sql
+create database db_name;
+```
 
-### create database
-`create database db_name;`
+* New user
+```mysql
+insert into mysql.user(Host,User,Password) \
+values("localhost","user_name",password("user_password"));
+```
 
-### New user
-`insert into mysql.user(Host,User,Password) values("localhost","user_name",password("user_password"));`
+* Add permission
+```mysql
+grant all privileges on db_name.* to \
+user_name@localhost identified by 'user_password';
+flush privileges;
+```
 
-### add permission
-`grant all privileges on db_name.* to user_name@localhost identified by 'user_password';`
+* Alter character (utf-8)
+```mysql
+alter database db_name default character set = utf8;
+```
 
-### alter character (utf-8)
-`alter database db_name default character set = utf8;`
-
-### recommend create
-`CREATE database db_name DEFAULT CHARACTER SET utf8;`
-
+* Recommend create
+```mysql
+CREATE database db_name DEFAULT CHARACTER SET utf8;
+```
 
 ## Other
 
-### foreign_key_checks
-`set foreign_key_checks = 0;` & `set foreign_key_checks = 1;`
+* foreign_key_checks
+```mysql 一对好基友
+set foreign_key_checks = 0;
+$_do_some_command;
+set foreign_key_checks = 1;
+```
 
-### show databases
-`show databases;`
+* show databases
+```mysql
+show databases;
+```
 
-### use databases
-`use db_name;`
+* use databases
+```mysql
+use db_name;
+```
 
-### truncate table
-`truncate table table_name;`
-清空表中所有内容，结构不变化。
+* truncate table
+```mysql 清空表中所有内容，结构不变化:
+truncate table table_name;
+```
 
-### drop table
-`drop table table_name;`
-销毁表，结构不复存在。
+* drop table
+```mysql 销毁表，结构不复存在:
+drop table table_name;
+```
 
-### update
-`update db_name.table_name set column_name = new_value where id>0 and your_where`
+* update
+```mysql
+update db_name.table_name set column_name = new_value where id>0 and your_where
+```
 id>0 我是被那个safe update逼的。
 
 ## End: 本文仅总结了我用到的一些语句。
+注：代码命令中含有`_`的，很多时候是需要你修改的。但也有不是的，如`set xx_xx = 0`，你需要修改`0 or 1`。
