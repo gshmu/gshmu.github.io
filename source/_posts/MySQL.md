@@ -16,10 +16,15 @@ $ mysql -u root -p
 create database db_name;
 ```
 
-* New user
+* Add user
 ```mysql
 insert into mysql.user(Host,User,Password) \
 values("localhost","user_name",password("user_password"));
+```
+
+* Show user
+```mysql
+select user,host,password from mysql.user; 
 ```
 
 * Add permission
@@ -27,6 +32,11 @@ values("localhost","user_name",password("user_password"));
 grant all privileges on db_name.* to \
 user_name@localhost identified by 'user_password';
 flush privileges;
+```
+
+* Show permission
+```mysql
+show grants for user_name@'localhost';
 ```
 
 * Alter character (utf-8)
