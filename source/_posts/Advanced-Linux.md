@@ -51,7 +51,12 @@ sudo service lightdm start
 
 ### 装新内核
 就不教大家装包了，大家都会。不过我想提醒大家的是，装新内核时有几个包需要统一装，不要漏了哪个。
-`apt-get install linux-headers-x.xx linux-headers-x.xx-generic linux-image-x.xx-generic linux-image-extra-x.xx-generic` 四个包，x.xx是版本号，自行替换。
+```shell 新内核的四个包
+apt-get install linux-headers-x.xx \
+		linux-headers-x.xx-generic \
+		linux-image-x.xx-generic \
+		linux-image-extra-x.xx-generic```
+四个包，x.xx是版本号，自行替换。
 
 目前源里版本更新到3.16.0-31了，Linux内核最新版本已经到4.0了，告诉大家个好消息，4.0版本以后，Linux再也不要求大家重启了，厌倦了Windows反复重启的可要牢记哦。
 
