@@ -1,6 +1,6 @@
 title: tuple change?
 date: 2014-10-8
-categories: python
+categories: Python
 tags: [python, tuple]
 ---
 在python中元组tuple是不能改变的，列表和字典是可以改变的。

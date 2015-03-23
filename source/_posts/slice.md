@@ -1,6 +1,6 @@
 title: slice
 date: 2014-10-14 10:46:19
-categories: python
+categories: Python
 tags: [python, slice, pythonic]
 ---
 “不会slice，绝不能说会python”，slice的重要性不言而喻。

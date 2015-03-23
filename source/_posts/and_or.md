@@ -1,6 +1,6 @@
 title: AND & OR
 date: 2014-08-08
-categories: python
+categories: Python
 tags: [python, bool]
 ---
 Python 的bool运算 and & or，但运算结果不是单纯的False或者True，无疑结果是对的。一句话总结：用最少的运算，保留更多的信息，保证正确的结果。
