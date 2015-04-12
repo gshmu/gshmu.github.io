@@ -1,7 +1,7 @@
 title: Learn Linux
 date: 2014-12-18
 categories: Linux
-tags: [Linux, try_linux]
+tags: [Linux]
 ---
 许多尝试过Linux过的，说起Linux总是一堆问题，外加一堆不习惯。我厌倦了Windows，尤其是中国特色下的 Windows，厌倦了杀毒软件，厌倦了盗版软件，所以决定换Linux。在换Linux的过程中，不能说没有问题，但基本是一帆风顺的，所以计划写本文。
 
