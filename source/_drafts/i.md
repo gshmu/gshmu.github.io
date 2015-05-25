@@ -8,22 +8,19 @@ config bash for work well
 ### 唤醒历史命令补全
 将下述代码复制粘贴到`~/.bashrc`文件(~/.profile 或 ~/.bash_aliases 等shell自动加载的文件)。
 重启bash，然后输入部分命令再使用上下键试试。
->
+```
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
-
+```
 
 ### 很长又很常用的命令
 虽说bash本身支持CTRL+R搜索历史，换醒历史命令补全后更是如虎添翼，但所谓术业有专攻。
->
-alias pyc='find . -type f -name "*.pyc" -exec rm {} \;'
-
+`alias pyc='find . -type f -name "*.pyc" -exec rm {} \;'`
 功能就不多说了，删除当前目录下所有pyc文件。
->
-alias wd='cd /var/www/your/path'
+`alias wd='cd /var/www/your/path'`
 
 那些常用又很长的目录，至于为什么是wd，参考命令`pwd`，当然可以设置成任何你喜欢的，提醒，设置之前查看下`type`。
->
+```
 function sp(){
 	if [ -z $1 ]; then
 		echo "Need Process Name!"
@@ -37,6 +34,7 @@ if [-f /usr/share/bash-completion/completions/complete]; then
 else
     echo "No comlpete for function sp()."
 fi
+```
 
 定义一个函数sp，查看指定进程。这还不够，添加自动完成，不能用Tab的函数不是好函数！
 
@@ -52,7 +50,7 @@ fi
 
 ## 总结
 最后的最后，有个不幸的消息告诉大家，[alias.sh](http://alias.sh)网站居然关闭了！
-```bash 懒人专用
+```
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
