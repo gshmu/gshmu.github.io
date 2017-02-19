@@ -3,9 +3,9 @@
   <title><![CDATA[公输目]]></title>
   <subtitle><![CDATA[家有静静，相守白头。		——莫言]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://gshmu.github.io/"/>
-  <updated>2017-02-19T09:56:46.812Z</updated>
-  <id>http://gshmu.github.io/</id>
+  <link href="http://gshmu.tk/"/>
+  <updated>2017-02-19T10:01:27.457Z</updated>
+  <id>http://gshmu.tk/</id>
   
   <author>
     <name><![CDATA[gshmu]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[summary]]></title>
-    <link href="http://gshmu.github.io/2017/02/19/summary/"/>
-    <id>http://gshmu.github.io/2017/02/19/summary/</id>
+    <link href="http://gshmu.tk/2017/02/19/summary/"/>
+    <id>http://gshmu.tk/2017/02/19/summary/</id>
     <published>2017-02-18T16:00:00.000Z</published>
     <updated>2017-02-19T09:54:26.000Z</updated>
     <content type="html"><![CDATA[<p>博客有挺长一段时间没有更新了，主要是因为很多东西发布在了内网，在内网中含有代码/配置是可以无所顾及随意发的，还会有意外收获的。</p>
@@ -42,16 +42,16 @@
 <h2 id="逃亡说">逃亡说</h2><p>下面来讲一个故事，《连载逃亡》，博客中有几篇时间很紧的就是那个时候写的，不过还有一部分，没]]>
     </summary>
     
-      <category term="life" scheme="http://gshmu.github.io/tags/life/"/>
+      <category term="life" scheme="http://gshmu.tk/tags/life/"/>
     
-      <category term="Other" scheme="http://gshmu.github.io/categories/Other/"/>
+      <category term="Other" scheme="http://gshmu.tk/categories/Other/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[robots.txt]]></title>
-    <link href="http://gshmu.github.io/2017/01/10/robots/"/>
-    <id>http://gshmu.github.io/2017/01/10/robots/</id>
+    <link href="http://gshmu.tk/2017/01/10/robots/"/>
+    <id>http://gshmu.tk/2017/01/10/robots/</id>
     <published>2017-01-09T16:00:00.000Z</published>
     <updated>2017-02-19T09:41:16.000Z</updated>
     <content type="html"><![CDATA[<p>中文名：一行代码，让客户侧设备远离搜索引擎魔爪
@@ -69,16 +69,16 @@
 <h1 id="历史">历史</h1><p>我们的设备不应该暴露在搜索引擎头条，但是这个真的出现过，]]>
     </summary>
     
-      <category term="advanced" scheme="http://gshmu.github.io/tags/advanced/"/>
+      <category term="advanced" scheme="http://gshmu.tk/tags/advanced/"/>
     
-      <category term="Linux" scheme="http://gshmu.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://gshmu.tk/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[lvs bug]]></title>
-    <link href="http://gshmu.github.io/2016/01/29/lvs-magic/"/>
-    <id>http://gshmu.github.io/2016/01/29/lvs-magic/</id>
+    <link href="http://gshmu.tk/2016/01/29/lvs-magic/"/>
+    <id>http://gshmu.tk/2016/01/29/lvs-magic/</id>
     <published>2016-01-28T16:00:00.000Z</published>
     <updated>2017-02-16T12:28:37.000Z</updated>
     <content type="html"><![CDATA[<p>lvs是网络负载均衡常用的一种方式，然而今天的重点并不是lvs，而是一个隐含的坑……</p>
@@ -100,18 +100,18 @@
 <h2 id="error">Error</h2><p>打开网页报表页面，显示有问题。然后是(firefox+chrome)*2，四种模式访问都有问题！注：四种模式——乘2是使用隐]]>
     </summary>
     
-      <category term="lvs" scheme="http://gshmu.github.io/tags/lvs/"/>
+      <category term="lvs" scheme="http://gshmu.tk/tags/lvs/"/>
     
-      <category term="bug" scheme="http://gshmu.github.io/tags/bug/"/>
+      <category term="bug" scheme="http://gshmu.tk/tags/bug/"/>
     
-      <category term="Linux" scheme="http://gshmu.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://gshmu.tk/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[ssh party]]></title>
-    <link href="http://gshmu.github.io/2016/01/21/ssh-party/"/>
-    <id>http://gshmu.github.io/2016/01/21/ssh-party/</id>
+    <link href="http://gshmu.tk/2016/01/21/ssh-party/"/>
+    <id>http://gshmu.tk/2016/01/21/ssh-party/</id>
     <published>2016-01-20T16:00:00.000Z</published>
     <updated>2017-02-19T09:41:44.000Z</updated>
     <content type="html"><![CDATA[<p>SSH你是不是每天都在用，ssh可是一大家，今天开派对，首先清点下：</p>
@@ -154,16 +154,16 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div c]]>
     </summary>
     
-      <category term="advanced" scheme="http://gshmu.github.io/tags/advanced/"/>
+      <category term="advanced" scheme="http://gshmu.tk/tags/advanced/"/>
     
-      <category term="Linux" scheme="http://gshmu.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://gshmu.tk/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[chrome apk]]></title>
-    <link href="http://gshmu.github.io/2016/01/15/chrome-apk/"/>
-    <id>http://gshmu.github.io/2016/01/15/chrome-apk/</id>
+    <link href="http://gshmu.tk/2016/01/15/chrome-apk/"/>
+    <id>http://gshmu.tk/2016/01/15/chrome-apk/</id>
     <published>2016-01-14T16:00:00.000Z</published>
     <updated>2017-02-19T09:38:47.000Z</updated>
     <content type="html"><![CDATA[<p><img src="pic/Ubuntu-chrome-apk.png" alt="跟大牛一起玩chrome，奔跑吧APK">
@@ -183,18 +183,18 @@
 <a href="https://github.com/vladikoff/chromeos-apk">chromeos-apk</a>:Run ]]>
     </summary>
     
-      <category term="advanced" scheme="http://gshmu.github.io/tags/advanced/"/>
+      <category term="advanced" scheme="http://gshmu.tk/tags/advanced/"/>
     
-      <category term="play" scheme="http://gshmu.github.io/tags/play/"/>
+      <category term="play" scheme="http://gshmu.tk/tags/play/"/>
     
-      <category term="Linux" scheme="http://gshmu.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://gshmu.tk/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[android feast]]></title>
-    <link href="http://gshmu.github.io/2016/01/14/android-feast/"/>
-    <id>http://gshmu.github.io/2016/01/14/android-feast/</id>
+    <link href="http://gshmu.tk/2016/01/14/android-feast/"/>
+    <id>http://gshmu.tk/2016/01/14/android-feast/</id>
     <published>2016-01-13T16:00:00.000Z</published>
     <updated>2017-02-19T09:37:59.000Z</updated>
     <content type="html"><![CDATA[<p><img src="pic/Android_Feast.png" alt="Android Feast">
@@ -242,18 +242,18 @@
 <h2 id="sdk">SDK</h2><p>adb（Android Debug Bridge），Win下面一般装个驱]]>
     </summary>
     
-      <category term="advanced" scheme="http://gshmu.github.io/tags/advanced/"/>
+      <category term="advanced" scheme="http://gshmu.tk/tags/advanced/"/>
     
-      <category term="play" scheme="http://gshmu.github.io/tags/play/"/>
+      <category term="play" scheme="http://gshmu.tk/tags/play/"/>
     
-      <category term="Linux" scheme="http://gshmu.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://gshmu.tk/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[multi-system]]></title>
-    <link href="http://gshmu.github.io/2016/01/12/multisystem/"/>
-    <id>http://gshmu.github.io/2016/01/12/multisystem/</id>
+    <link href="http://gshmu.tk/2016/01/12/multisystem/"/>
+    <id>http://gshmu.tk/2016/01/12/multisystem/</id>
     <published>2016-01-11T16:00:00.000Z</published>
     <updated>2017-02-19T09:40:22.000Z</updated>
     <content type="html"><![CDATA[<p>中文名：《我把双系统放入vBox并行》
@@ -295,20 +295,20 @@
 <h2 id="linux">Linux</h2><p>我用Li]]>
     </summary>
     
-      <category term="config" scheme="http://gshmu.github.io/tags/config/"/>
+      <category term="config" scheme="http://gshmu.tk/tags/config/"/>
     
-      <category term="sys" scheme="http://gshmu.github.io/tags/sys/"/>
+      <category term="sys" scheme="http://gshmu.tk/tags/sys/"/>
     
-      <category term="linux" scheme="http://gshmu.github.io/tags/linux/"/>
+      <category term="linux" scheme="http://gshmu.tk/tags/linux/"/>
     
-      <category term="Config" scheme="http://gshmu.github.io/categories/Config/"/>
+      <category term="Config" scheme="http://gshmu.tk/categories/Config/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[wake on lan/wan]]></title>
-    <link href="http://gshmu.github.io/2016/01/11/wol/"/>
-    <id>http://gshmu.github.io/2016/01/11/wol/</id>
+    <link href="http://gshmu.tk/2016/01/11/wol/"/>
+    <id>http://gshmu.tk/2016/01/11/wol/</id>
     <published>2016-01-10T16:00:00.000Z</published>
     <updated>2017-02-19T09:43:12.000Z</updated>
     <content type="html"><![CDATA[<p>我是怎么远程开启我家电脑的WOL：远程登录后只要没有限制，大家都会关机，然而今天我们讨论的话题是远程开机——WakeOnLan…</p>
@@ -334,20 +334,20 @@
 <h2 id="app">APP</h2><p>WOL这款应用是跨平台的，github上有个用perl写的，原先perl写的不支持域名，]]>
     </summary>
     
-      <category term="config" scheme="http://gshmu.github.io/tags/config/"/>
+      <category term="config" scheme="http://gshmu.tk/tags/config/"/>
     
-      <category term="wol" scheme="http://gshmu.github.io/tags/wol/"/>
+      <category term="wol" scheme="http://gshmu.tk/tags/wol/"/>
     
-      <category term="play" scheme="http://gshmu.github.io/tags/play/"/>
+      <category term="play" scheme="http://gshmu.tk/tags/play/"/>
     
-      <category term="Config" scheme="http://gshmu.github.io/categories/Config/"/>
+      <category term="Config" scheme="http://gshmu.tk/categories/Config/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[a cup of vps]]></title>
-    <link href="http://gshmu.github.io/2015/12/08/vps/"/>
-    <id>http://gshmu.github.io/2015/12/08/vps/</id>
+    <link href="http://gshmu.tk/2015/12/08/vps/"/>
+    <id>http://gshmu.tk/2015/12/08/vps/</id>
     <published>2015-12-07T16:00:00.000Z</published>
     <updated>2017-02-19T09:45:15.000Z</updated>
     <content type="html"><![CDATA[<p>习惯了谷歌搜索，还真的离不开了…(本文后面更新过)</p>
@@ -380,20 +380,20 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <h1 id="buy-vps">Buy VPS</h1><p>购买个VPS吧，选了款便宜点的，<a href="https://bandwagonhost.com/">bandwagon</a> 19.9$/Y（]]>
     </summary>
     
-      <category term="linux" scheme="http://gshmu.github.io/tags/linux/"/>
+      <category term="linux" scheme="http://gshmu.tk/tags/linux/"/>
     
-      <category term="config" scheme="http://gshmu.github.io/tags/config/"/>
+      <category term="config" scheme="http://gshmu.tk/tags/config/"/>
     
-      <category term="deploy" scheme="http://gshmu.github.io/tags/deploy/"/>
+      <category term="deploy" scheme="http://gshmu.tk/tags/deploy/"/>
     
-      <category term="Linux" scheme="http://gshmu.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://gshmu.tk/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[remote debugger]]></title>
-    <link href="http://gshmu.github.io/2015/07/02/remote-debug/"/>
-    <id>http://gshmu.github.io/2015/07/02/remote-debug/</id>
+    <link href="http://gshmu.tk/2015/07/02/remote-debug/"/>
+    <id>http://gshmu.tk/2015/07/02/remote-debug/</id>
     <published>2015-07-01T16:00:00.000Z</published>
     <updated>2017-02-19T09:41:07.000Z</updated>
     <content type="html"><![CDATA[<p>你没有看错，Python Remote Debugger with PyCharm！本文是基于Python IDE：<a href="https://www.jetbrains.com/pycharm/">PyCharm</a>，主要介绍 Remote Debugger 的在 PyCharm 中的配置使用，本文希望传递一个消息，<strong>远程是可在IDE调试的</strong>，也希望大家能在以后的工作中调试起来…。</p>
@@ -427,20 +427,20 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <![CDATA[<p>你没有看错，Python Remote Debugger with PyCharm！本文是基于Python IDE：<a href="https://www.jetbrains.com/pycharm/">PyCharm</a>，主要介绍 Remote Debugger 的]]>
     </summary>
     
-      <category term="python" scheme="http://gshmu.github.io/tags/python/"/>
+      <category term="python" scheme="http://gshmu.tk/tags/python/"/>
     
-      <category term="debug" scheme="http://gshmu.github.io/tags/debug/"/>
+      <category term="debug" scheme="http://gshmu.tk/tags/debug/"/>
     
-      <category term="idea" scheme="http://gshmu.github.io/tags/idea/"/>
+      <category term="idea" scheme="http://gshmu.tk/tags/idea/"/>
     
-      <category term="Python" scheme="http://gshmu.github.io/categories/Python/"/>
+      <category term="Python" scheme="http://gshmu.tk/categories/Python/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[rege guide]]></title>
-    <link href="http://gshmu.github.io/2015/04/08/rege-guide/"/>
-    <id>http://gshmu.github.io/2015/04/08/rege-guide/</id>
+    <link href="http://gshmu.tk/2015/04/08/rege-guide/"/>
+    <id>http://gshmu.tk/2015/04/08/rege-guide/</id>
     <published>2015-04-07T16:00:00.000Z</published>
     <updated>2017-02-19T09:40:53.000Z</updated>
     <content type="html"><![CDATA[<p>不知不觉系统的学习正则已经一年了，特撰此文。推荐教材《精通正则表达式》英文名：&quot;mastering regular expressions&quot;，作者：Jeffrey E. F. Friedl。注：如果你看中文版时觉得代码有问题，请看原版，至少看原版的代码。</p>
@@ -455,16 +455,16 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <![CDATA[<p>不知不觉系统的学习正则已经一年了，特撰此文。推荐教材《精通正则表达式》英文名：&quot;mastering regular expressions&quot;，作者：Jeffrey E. F. Friedl。注：如果你看中文版时觉得代码有问题，请看原版，至少看原版的代码。]]>
     </summary>
     
-      <category term="regex" scheme="http://gshmu.github.io/tags/regex/"/>
+      <category term="regex" scheme="http://gshmu.tk/tags/regex/"/>
     
-      <category term="regex" scheme="http://gshmu.github.io/categories/regex/"/>
+      <category term="regex" scheme="http://gshmu.tk/categories/regex/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[django advanced]]></title>
-    <link href="http://gshmu.github.io/2015/03/22/django-advanced/"/>
-    <id>http://gshmu.github.io/2015/03/22/django-advanced/</id>
+    <link href="http://gshmu.tk/2015/03/22/django-advanced/"/>
+    <id>http://gshmu.tk/2015/03/22/django-advanced/</id>
     <published>2015-03-22T00:08:06.000Z</published>
     <updated>2017-02-19T09:39:16.000Z</updated>
     <content type="html"><![CDATA[<p>本文记述我在使用Django时遇到的两个问题，两次被坑的过程，也是两次进步的过程。</p>
@@ -483,20 +483,20 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <h2 id="<code>qs[m:n].update()</code>"><code>qs[m:n].update()</code></h2><p>业务我就不多说了，给query]]>
     </summary>
     
-      <category term="django" scheme="http://gshmu.github.io/tags/django/"/>
+      <category term="django" scheme="http://gshmu.tk/tags/django/"/>
     
-      <category term="python" scheme="http://gshmu.github.io/tags/python/"/>
+      <category term="python" scheme="http://gshmu.tk/tags/python/"/>
     
-      <category term="advanced" scheme="http://gshmu.github.io/tags/advanced/"/>
+      <category term="advanced" scheme="http://gshmu.tk/tags/advanced/"/>
     
-      <category term="Python" scheme="http://gshmu.github.io/categories/Python/"/>
+      <category term="Python" scheme="http://gshmu.tk/categories/Python/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[advanced linux]]></title>
-    <link href="http://gshmu.github.io/2015/03/10/advanced-linux/"/>
-    <id>http://gshmu.github.io/2015/03/10/advanced-linux/</id>
+    <link href="http://gshmu.tk/2015/03/10/advanced-linux/"/>
+    <id>http://gshmu.tk/2015/03/10/advanced-linux/</id>
     <published>2015-03-09T16:00:00.000Z</published>
     <updated>2017-02-19T09:37:20.000Z</updated>
     <content type="html"><![CDATA[<p>本文介绍几个Ubuntu进阶的操作。</p>
@@ -539,20 +539,20 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <li>内存：Kingston 8G (骇客神条 1866MHz)]]>
     </summary>
     
-      <category term="linux" scheme="http://gshmu.github.io/tags/linux/"/>
+      <category term="linux" scheme="http://gshmu.tk/tags/linux/"/>
     
-      <category term="advanced" scheme="http://gshmu.github.io/tags/advanced/"/>
+      <category term="advanced" scheme="http://gshmu.tk/tags/advanced/"/>
     
-      <category term="grub" scheme="http://gshmu.github.io/tags/grub/"/>
+      <category term="grub" scheme="http://gshmu.tk/tags/grub/"/>
     
-      <category term="Linux" scheme="http://gshmu.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://gshmu.tk/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[assembled computers]]></title>
-    <link href="http://gshmu.github.io/2015/03/10/assembled-computers/"/>
-    <id>http://gshmu.github.io/2015/03/10/assembled-computers/</id>
+    <link href="http://gshmu.tk/2015/03/10/assembled-computers/"/>
+    <id>http://gshmu.tk/2015/03/10/assembled-computers/</id>
     <published>2015-03-09T16:00:00.000Z</published>
     <updated>2017-02-19T09:38:18.000Z</updated>
     <content type="html"><![CDATA[<p>欣赏台式机的性能，所以一直计划这亲自攥台PC，话说我真不懂攥机，权当是分享下“失败”的经验吧。</p>
@@ -579,18 +579,18 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <li>内存：Kingston 8G]]>
     </summary>
     
-      <category term="life" scheme="http://gshmu.github.io/tags/life/"/>
+      <category term="life" scheme="http://gshmu.tk/tags/life/"/>
     
-      <category term="linux" scheme="http://gshmu.github.io/tags/linux/"/>
+      <category term="linux" scheme="http://gshmu.tk/tags/linux/"/>
     
-      <category term="Other" scheme="http://gshmu.github.io/categories/Other/"/>
+      <category term="Other" scheme="http://gshmu.tk/categories/Other/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[come back]]></title>
-    <link href="http://gshmu.github.io/2014/12/22/come-back/"/>
-    <id>http://gshmu.github.io/2014/12/22/come-back/</id>
+    <link href="http://gshmu.tk/2014/12/22/come-back/"/>
+    <id>http://gshmu.tk/2014/12/22/come-back/</id>
     <published>2014-12-21T16:00:00.000Z</published>
     <updated>2017-02-19T09:39:01.000Z</updated>
     <content type="html"><![CDATA[<p>我想家了，从大学开始，我距离家跨好几个省，在外边过的还算适应，一切也还好。工作后每年回一次家，可是就回这一次家，火车票买不到，我不得不考虑下在家附近工作了...</p>
@@ -609,16 +609,16 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <h2 id="compare">Compare</h2><p>最近陷入深深的矛盾中，平时休息离家太远压]]>
     </summary>
     
-      <category term="life" scheme="http://gshmu.github.io/tags/life/"/>
+      <category term="life" scheme="http://gshmu.tk/tags/life/"/>
     
-      <category term="Other" scheme="http://gshmu.github.io/categories/Other/"/>
+      <category term="Other" scheme="http://gshmu.tk/categories/Other/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[learn linux]]></title>
-    <link href="http://gshmu.github.io/2014/12/18/learn-linux/"/>
-    <id>http://gshmu.github.io/2014/12/18/learn-linux/</id>
+    <link href="http://gshmu.tk/2014/12/18/learn-linux/"/>
+    <id>http://gshmu.tk/2014/12/18/learn-linux/</id>
     <published>2014-12-17T16:00:00.000Z</published>
     <updated>2017-02-19T09:39:53.000Z</updated>
     <content type="html"><![CDATA[<p>许多尝试过Linux过的，说起Linux总是一堆问题，外加一堆不习惯。我厌倦了Windows，尤其是中国特色下的 Windows，厌倦了杀毒软件，厌倦了盗版软件，所以决定换Linux。在换Linux的过程中，不能说没有问题，但基本是一帆风顺的，所以计划写本文。</p>
@@ -640,16 +640,16 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <h]]>
     </summary>
     
-      <category term="linux" scheme="http://gshmu.github.io/tags/linux/"/>
+      <category term="linux" scheme="http://gshmu.tk/tags/linux/"/>
     
-      <category term="Linux" scheme="http://gshmu.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://gshmu.tk/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[git_rename]]></title>
-    <link href="http://gshmu.github.io/2014/10/28/git-rename/"/>
-    <id>http://gshmu.github.io/2014/10/28/git-rename/</id>
+    <link href="http://gshmu.tk/2014/10/28/git-rename/"/>
+    <id>http://gshmu.tk/2014/10/28/git-rename/</id>
     <published>2014-10-27T16:00:00.000Z</published>
     <updated>2017-02-16T12:38:01.000Z</updated>
     <content type="html"><![CDATA[<h2 id="why">Why</h2><p>项目多了，难免会有重命名的时候，重命名本身没什么问题，可是加上gitignore中的<code>*.pyc</code>或<code>*~</code>可能会出现些问题…</p>
@@ -663,16 +663,16 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <h3 id="q">Q</h3><p>重命名的时候]]>
     </summary>
     
-      <category term="git" scheme="http://gshmu.github.io/tags/git/"/>
+      <category term="git" scheme="http://gshmu.tk/tags/git/"/>
     
-      <category term="Git" scheme="http://gshmu.github.io/categories/Git/"/>
+      <category term="Git" scheme="http://gshmu.tk/categories/Git/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[slice]]></title>
-    <link href="http://gshmu.github.io/2014/10/14/slice/"/>
-    <id>http://gshmu.github.io/2014/10/14/slice/</id>
+    <link href="http://gshmu.tk/2014/10/14/slice/"/>
+    <id>http://gshmu.tk/2014/10/14/slice/</id>
     <published>2014-10-14T02:46:19.000Z</published>
     <updated>2017-02-19T09:41:24.000Z</updated>
     <content type="html"><![CDATA[<p>“不会slice，绝不能说会python”，slice的重要性不言而喻。</p>
@@ -700,20 +700,20 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <li>[in]]>
     </summary>
     
-      <category term="python" scheme="http://gshmu.github.io/tags/python/"/>
+      <category term="python" scheme="http://gshmu.tk/tags/python/"/>
     
-      <category term="slice" scheme="http://gshmu.github.io/tags/slice/"/>
+      <category term="slice" scheme="http://gshmu.tk/tags/slice/"/>
     
-      <category term="pythonic" scheme="http://gshmu.github.io/tags/pythonic/"/>
+      <category term="pythonic" scheme="http://gshmu.tk/tags/pythonic/"/>
     
-      <category term="Python" scheme="http://gshmu.github.io/categories/Python/"/>
+      <category term="Python" scheme="http://gshmu.tk/categories/Python/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[mailcap]]></title>
-    <link href="http://gshmu.github.io/2014/10/13/mailcap/"/>
-    <id>http://gshmu.github.io/2014/10/13/mailcap/</id>
+    <link href="http://gshmu.tk/2014/10/13/mailcap/"/>
+    <id>http://gshmu.tk/2014/10/13/mailcap/</id>
     <published>2014-10-12T16:00:00.000Z</published>
     <updated>2017-02-16T12:38:01.000Z</updated>
     <content type="html"><![CDATA[<p><code>Tencent === Trash</code>，微云下载的文件总是用gedit打开，firefox如是说。有谁能想到，腾讯微云下载的文件有着一样错误的<code>Content-Type: &quot;application/octet-stream&quot;</code></p>
@@ -729,16 +729,16 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <![CDATA[<p><code>Tencent === Trash</code>，微云下载的文件总是用gedit打开，firefox如是说。有谁能想到，腾讯微云下载的文件有着一样错误的<code>Content-Type: &quot;application/octet-stream&quot]]>
     </summary>
     
-      <category term="config" scheme="http://gshmu.github.io/tags/config/"/>
+      <category term="config" scheme="http://gshmu.tk/tags/config/"/>
     
-      <category term="Linux" scheme="http://gshmu.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://gshmu.tk/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[tuple change?]]></title>
-    <link href="http://gshmu.github.io/2014/10/08/tuple/"/>
-    <id>http://gshmu.github.io/2014/10/08/tuple/</id>
+    <link href="http://gshmu.tk/2014/10/08/tuple/"/>
+    <id>http://gshmu.tk/2014/10/08/tuple/</id>
     <published>2014-10-07T16:00:00.000Z</published>
     <updated>2017-02-16T12:38:01.000Z</updated>
     <content type="html"><![CDATA[<p>在python中元组tuple是不能改变的，列表和字典是可以改变的。</p>
@@ -751,11 +751,11 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <h3 id="<code>change</code>"><code>change</code></h3><figure class="highlight python"><table><tr><]]>
     </summary>
     
-      <category term="python" scheme="http://gshmu.github.io/tags/python/"/>
+      <category term="python" scheme="http://gshmu.tk/tags/python/"/>
     
-      <category term="tuple" scheme="http://gshmu.github.io/tags/tuple/"/>
+      <category term="tuple" scheme="http://gshmu.tk/tags/tuple/"/>
     
-      <category term="Python" scheme="http://gshmu.github.io/categories/Python/"/>
+      <category term="Python" scheme="http://gshmu.tk/categories/Python/"/>
     
   </entry>
   
