@@ -1,9 +1,9 @@
-title: Assembled computers
+title: assembled computers
 date: 2015-03-10
 categories: Other
-tags: [life, Linux]
+tags: [life, linux]
 ---
-欣赏台式机的性能，所以一直计划这亲自攥台PC，话说我真不懂攥机，权当时分享下“失败”的经验吧。
+欣赏台式机的性能，所以一直计划这亲自攥台PC，话说我真不懂攥机，权当是分享下“失败”的经验吧。
 
 ## 配单
 * CPU：E3-1231 V3 (3.4GHz*8 志强四核八线程)

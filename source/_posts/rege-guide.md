@@ -1,4 +1,4 @@
-title: rege Guide
+title: rege guide
 date: 2015-04-08
 categories: regex
 tags: [regex]

@@ -1,7 +1,7 @@
-title: Django Advanced
+title: django advanced
 date: 2015-03-22 08:08:06
 categories: Python
-tags: [django, python, Advanced]
+tags: [django, python, advanced]
 ---
 本文记述我在使用Django时遇到的两个问题，两次被坑的过程，也是两次进步的过程。
 

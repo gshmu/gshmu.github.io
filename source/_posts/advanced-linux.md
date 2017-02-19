@@ -1,7 +1,7 @@
-title: Advanced Linux
+title: advanced linux
 date: 2015-03-10
 categories: Linux
-tags: [Linux, Advanced, GRUB]
+tags: [linux, advanced, grub]
 ---
 本文介绍几个Ubuntu进阶的操作。
 

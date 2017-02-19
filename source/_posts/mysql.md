@@ -1,7 +1,7 @@
-title: MySQL Notes
+title: MySQL notes
 date: 2014-08-15
 categories: MySQL
-tags: [MySQL]
+tags: [mysql]
 ---
 MySQL 备忘，已经用到的一些命令，方式信马游缰。一句话总结：那些我用到的MySQL语句。
 
