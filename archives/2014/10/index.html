@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Archives: 2014/10 | 公输目</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="公输目|gshmu|mhohai|blog|python|Linux|shell">
+<meta property="og:type" content="website">
+<meta property="og:title" content="公输目">
+<meta property="og:url" content="http://gshmu.github.io/archives/2014/10/">
+<meta property="og:site_name" content="公输目">
+<meta property="og:description" content="公输目|gshmu|mhohai|blog|python|Linux|shell">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="公输目">
+<meta name="twitter:description" content="公输目|gshmu|mhohai|blog|python|Linux|shell">
+
+  
+    <link rel="alternative" href="/atom.xml" title="公输目" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">公输目</a>
+    <div class="collapse navbar-collapse nav-menu">
+      <ul class="nav navbar-nav">
+      
+        <li>
+          <a href="/archives">
+            <i class="fa fa-archive"></i>
+            Archives
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categories">
+            <i class="fa fa-folder"></i>
+            Categories
+          </a>
+        </li>
+      
+        <li>
+          <a href="/tags">
+            <i class="fa fa-tags"></i>
+            Tags
+          </a>
+        </li>
+      
+        <li>
+          <a href="/wiki">
+            <i class="fa fa-book"></i>
+            Wiki
+          </a>
+        </li>
+      
+        <li>
+          <a href="/about">
+            <i class="fa fa-user"></i>
+            About
+          </a>
+        </li>
+      
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a id="rss-link" href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="clearfix"></div>
+
+      <div id='content' class="container">
+
+        <div class="page-header-wrapper">
+          <!--[if lt IE 9]><div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>提示:</strong>您的浏览器版本太低了,建议升级到 <strong><a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" title="IE9">IE9</a></strong> 以上,本站使用<a href="https://www.google.com/intl/zh-CN/chrome/">Chrome浏览器</a>可以获得最好的显示效果.</div><![endif]-->
+          <div class="page-header">
+            <h1 class="title">
+          
+            
+              <time datetime="2017-02-19T09:56:47.073Z" itemprop="datePublished">February 2017</time>
+            
+          
+            </h1>
+        </div>
+      </div>
+      
+      <section id="main"
+        
+      >
+
+  
+
+
+
+  
+    <article id="post-u12fumftvtozfknl" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        <i class="fa fa-file-text-o"></i>
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2014/10/28/git-rename/">git_rename</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2014-10-27T16:00:00.000Z" itemprop="datePublished">Oct 28 2014</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <h2 id="why">Why</h2><p>项目多了，难免会有重命名的时候，重命名本身没什么问题，可是加上gitignore中的<code>*.pyc</code>或<code>*~</code>可能会出现些问题…</p>
+<h3 id="q">Q</h3><p>重命名的时候一般不会有问题，可是在分支切换的同时，由于存在ignore的文件，分支的切换并不会那么正确。
+往往会多出重命名前或重命名后的文件夹，多的原因就是文件夹下有被忽略的临时文件。</p>
+<p>原因很简单，所以解决也不难，删除多余的文件夹，一切正常了。</p>
+<h2 id="总结">总结</h2><p>git在重命名文件夹后切换分支可能由于ignore临时文件的存在多出重命名前后的文件夹。</p>
+
+        
+        <footer class="article-footer">
+          <a data-url="http://gshmu.github.io/2014/10/28/git-rename/" data-id="u12fumftvtozfknl" data_title="git_rename"
+          data_summary="Why项目多了，难免会有重命名的时候，重命名本身没什么问题，可是加上gitignore中的*.pyc或*~可能会出现些问题…
+Q重命名的时候一般不会有问题，可是在分支切换的同时，由于..." class="article-share-link">Share</a>
+          
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Git/">Git</a>
+  </div>
+
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/git/">git</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
+    <article id="post-clsnkif2vdb59zxh" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        <i class="fa fa-file-text-o"></i>
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2014/10/14/slice/">slice</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2014-10-14T02:46:19.000Z" itemprop="datePublished">Oct 14 2014</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p>“不会slice，绝不能说会python”，slice的重要性不言而喻。</p>
+<h2 id="basis">Basis</h2><ul>
+<li>index start with 0</li>
+<li>support negtive index</li>
+<li>[included:excluded:step] eg: <strong><code>[:]</code></strong>, <strong><code>[::-1]</code></strong></li>
+<li>work with list, tuple and string</li>
+</ul>
+<h2 id="step">step</h2><figure class="highlight python"><figcaption><span>Ipython 中的示例</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">In [<span class="number">1</span>]: e = range(<span class="number">6</span>)</div><div class="line">  </div><div class="line">In [<span class="number">2</span>]: e</div><div class="line">Out[<span class="number">2</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line">  </div><div class="line">In [<span class="number">3</span>]: e[:]</div><div class="line">Out[<span class="number">3</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line">  </div><div class="line">In [<span class="number">4</span>]: e[<span class="number">6</span>]</div><div class="line">IndexError</div><div class="line">  </div><div class="line">In [<span class="number">5</span>]: e[<span class="number">5</span>]</div><div class="line">Out[<span class="number">5</span>]: <span class="number">5</span></div><div class="line">  </div><div class="line">In [<span class="number">6</span>]: e[:<span class="number">5</span>]</div><div class="line">Out[<span class="number">6</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</div><div class="line">  </div><div class="line">In [<span class="number">7</span>]: e[:<span class="number">6</span>]</div><div class="line">Out[<span class="number">7</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line">  </div><div class="line">In [<span class="number">8</span>]: e[::-<span class="number">1</span>]</div><div class="line">Out[<span class="number">8</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</div><div class="line">  </div><div class="line">In [<span class="number">9</span>]: e[<span class="number">6</span>:<span class="number">0</span>]</div><div class="line">Out[<span class="number">9</span>]: []</div><div class="line">  </div><div class="line">In [<span class="number">10</span>]: e[<span class="number">6</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">10</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line">  </div><div class="line">In [<span class="number">11</span>]: <span class="number">0</span> <span class="keyword">in</span> e[<span class="number">6</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">11</span>]: <span class="keyword">False</span></div><div class="line">  </div><div class="line">In [<span class="number">12</span>]: e[<span class="number">5</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">12</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line">  </div><div class="line">In [<span class="number">13</span>]: e[<span class="number">5</span>:<span class="number">0</span>:-<span class="number">1</span>] == e[<span class="number">6</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">13</span>]: <span class="keyword">True</span></div><div class="line">  </div><div class="line">In [<span class="number">14</span>]: e[-<span class="number">1</span>:-<span class="number">7</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">14</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</div><div class="line">  </div><div class="line">In [<span class="number">15</span>]: e[-<span class="number">1</span>:-<span class="number">7</span>:-<span class="number">1</span>] == e[::-<span class="number">1</span>]</div><div class="line">Out[<span class="number">15</span>]: <span class="keyword">True</span></div><div class="line">  </div><div class="line">In [<span class="number">16</span>]: e[-<span class="number">1</span>:-<span class="number">9</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">16</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</div><div class="line">  </div><div class="line">In [<span class="number">17</span>]: e[::-<span class="number">2</span>] == e[-<span class="number">1</span>:-<span class="number">7</span>:-<span class="number">2</span>]</div><div class="line">Out[<span class="number">17</span>]: <span class="keyword">True</span></div><div class="line">  </div><div class="line">In [<span class="number">18</span>]: e[::-<span class="number">2</span>] == e[-<span class="number">1</span>:-<span class="number">8</span>:-<span class="number">2</span>]</div><div class="line">Out[<span class="number">18</span>]: <span class="string">'Just do IT'</span></div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>e[::-1] == e[-1:-7:-1]</strong></li>
+<li>slice切片中索引可以超出实际范围</li>
+<li>带有步长的切片，索引顺序和步长方向一致</li>
+<li>切片总是新产生一个对象，而不是改变原有对象</li>
+</ul>
+<h2 id="总结">总结</h2><p><code>Just do IT</code></p>
+
+        
+        <footer class="article-footer">
+          <a data-url="http://gshmu.github.io/2014/10/14/slice/" data-id="clsnkif2vdb59zxh" data_title="slice"
+          data_summary="“不会slice，绝不能说会python”，slice的重要性不言而喻。
+Basis
+index start with 0
+support negtive index
+[included:excluded:step] eg: [:], [::-1]
+work with list,..." class="article-share-link">Share</a>
+          
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/pythonic/">pythonic</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-info" href="/tags/slice/">slice</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
+    <article id="post-7ccencd13chupmhk" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        <i class="fa fa-file-text-o"></i>
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2014/10/13/mailcap/">mailcap</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2014-10-12T16:00:00.000Z" itemprop="datePublished">Oct 13 2014</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p><code>Tencent === Trash</code>，微云下载的文件总是用gedit打开，firefox如是说。有谁能想到，腾讯微云下载的文件有着一样错误的<code>Content-Type: &quot;application/octet-stream&quot;</code></p>
+<h3 id="<code>the-way-to-fix-it</code>"><code>The Way to fix it</code></h3><p>Ubuntu 下，命令行执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">'application/octet-stream; nautilus --no-default-window --no-desktop %s; test=test -n "$DISPLAY"'</span> &gt;&gt; ~/.mailcap</div></pre></td></tr></table></figure>
+
+<p>其实就是向家目录下<code>.mailcap</code>文件追加上述命令单引号内中的内容。（文件不存在则新建）</p>
+<h3 id="reason">reason</h3><p>微云下载文件时，HTTP Response headers，中使用了不是Trash不可能使用的<code>Content-Type: &quot;application/octet-stream&quot;</code>，这是什么鬼文件，系统说他不认识，你试试gedit吧。</p>
+<p>上面的解决方法是，<code>application/octet-stream</code>类型的文件用nautilus打开（在文件夹中显示），之所以没有定义到确定的应用，因为我常用的有zip和pdf两种，只好折中使用nautilus了。</p>
+<h2 id="总结">总结</h2><p>firefox中下载的文件总是用gedit打开，我气愤不止一次了。我用Linux，为什么用QQ，因为有人用QQ，为什么是微云，因为有用QQ发的文件，我只好借用微云，然后浏览器下载下来。</p>
+<h3 id="感谢irc:-<code>cork</code>">感谢IRC: <code>Cork</code></h3>
+        
+        <footer class="article-footer">
+          <a data-url="http://gshmu.github.io/2014/10/13/mailcap/" data-id="7ccencd13chupmhk" data_title="mailcap"
+          data_summary="Tencent === Trash，微云下载的文件总是用gedit打开，firefox如是说。有谁能想到，腾讯微云下载的文件有着一样错误的Content-Type: &quot;application/octet-stream&quot;
+..." class="article-share-link">Share</a>
+          
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/config/">config</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
+    <article id="post-l8cugc1x5vbaiwop" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        <i class="fa fa-file-text-o"></i>
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2014/10/08/tuple/">tuple change?</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2014-10-07T16:00:00.000Z" itemprop="datePublished">Oct 8 2014</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p>在python中元组tuple是不能改变的，列表和字典是可以改变的。</p>
+<h3 id="<code>change</code>"><code>change</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">In [<span class="number">1</span>]: l = [<span class="number">1</span>, <span class="number">2</span>]</div><div class="line"> </div><div class="line">In [<span class="number">2</span>]: d = {<span class="string">'a'</span>:<span class="string">'aaa'</span>, <span class="string">'b'</span>:<span class="string">'bbb'</span>}</div><div class="line"> </div><div class="line">In [<span class="number">4</span>]: t = (l, d)</div><div class="line"> </div><div class="line">In [<span class="number">5</span>]: t</div><div class="line">Out[<span class="number">5</span>]: ([<span class="number">1</span>, <span class="number">2</span>], {<span class="string">'a'</span>: <span class="string">'aaa'</span>, <span class="string">'b'</span>: <span class="string">'bbb'</span>})</div><div class="line"> </div><div class="line">In [<span class="number">7</span>]: l.pop()</div><div class="line">Out[<span class="number">7</span>]: <span class="number">2</span></div><div class="line"> </div><div class="line">In [<span class="number">8</span>]: t</div><div class="line">Out[<span class="number">8</span>]: ([<span class="number">1</span>], {<span class="string">'a'</span>: <span class="string">'aaa'</span>, <span class="string">'b'</span>: <span class="string">'bbb'</span>})</div><div class="line"> </div><div class="line">In [<span class="number">9</span>]: l.append(<span class="number">3</span>)</div><div class="line"> </div><div class="line">In [<span class="number">10</span>]: t</div><div class="line">Out[<span class="number">10</span>]: ([<span class="number">1</span>, <span class="number">3</span>], {<span class="string">'a'</span>: <span class="string">'aaa'</span>, <span class="string">'b'</span>: <span class="string">'bbb'</span>})</div></pre></td></tr></table></figure>
+
+<h2 id="总结">总结</h2><p>上述，元组的项目是列表，改变了列表。元组有没有改变，自己掂量吧...</p>
+
+        
+        <footer class="article-footer">
+          <a data-url="http://gshmu.github.io/2014/10/08/tuple/" data-id="l8cugc1x5vbaiwop" data_title="tuple change?"
+          data_summary="在python中元组tuple是不能改变的，列表和字典是可以改变的。
+change">change12345678910111213141516171819In [1]: l = [1, 2] In [2]: d = {'a':'aaa', 'b':'bbb'} In [4..." class="article-share-link">Share</a>
+          
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/tuple/">tuple</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
+  
+
+
+
+</section>
+        
+          
+<aside id="sidebar">
+  
+    
+      <div class="widget-wrap">
+    <div id="search-form-wrap">
+      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://gshmu.github.io"></form>
+    </div>
+</div>
+
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li class="recent-list">
+            <a href="/2017/02/19/summary/">summary</a>
+          </li>
+        
+          <li class="recent-list">
+            <a href="/2017/01/10/robots/">robots.txt</a>
+          </li>
+        
+          <li class="recent-list">
+            <a href="/2016/01/29/lvs-magic/">lvs bug</a>
+          </li>
+        
+          <li class="recent-list">
+            <a href="/2016/01/21/ssh-party/">ssh party</a>
+          </li>
+        
+          <li class="recent-list">
+            <a href="/2016/01/15/chrome-apk/">chrome apk</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+         <li class="blogroll">
+           
+             <i class="fa fa-github"></i>
+           
+           <a href="https://github.com/" title="Github">Github</a>
+          </li>
+        
+         <li class="blogroll">
+           
+             <i class="fa fa-google-plus"></i>
+           
+           <a href="https://plus.google.com/" title="Google+">Google+</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+  
+</aside>
+
+
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer container">
+    <div id="footer-info" class="inner">
+      <a href="/">公输目</a> &copy; 2017 Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/seff/nut" target="_blank">Nut</a>
+    </div>
+  </div>
+</footer>
+<a id="gotop" href="#">
+  <i class="fa fa-chevron-up"></i>
+</a>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="[object Object]" class="mobile-nav-link">0</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">1</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">2</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">3</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">4</a>
+  
+</nav>
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="/js/jquery.fitvids.js" type="text/javascript"></script>
+
+<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+  </div>
+</body>
+</html>

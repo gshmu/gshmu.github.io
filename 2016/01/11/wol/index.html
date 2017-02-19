@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>wake on lan/wan | 公输目</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="我是怎么远程开启我家电脑的WOL：远程登录后只要没有限制，大家都会关机，然而今天我们讨论的话题是远程开机——WakeOnLan…
+APPWOL这款应用是跨平台的，github上有个用perl写的，原先perl写的不支持域名，不过你可以找到我修改后支持域名的那款。
+那次分享我使用的手机远程开启我家电脑，之所以选择手机是因为手机方便，选择的应用是：net.mafro.android.wakeonlan">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wake on lan/wan">
+<meta property="og:url" content="http://gshmu.github.io/2016/01/11/wol/">
+<meta property="og:site_name" content="公输目">
+<meta property="og:description" content="我是怎么远程开启我家电脑的WOL：远程登录后只要没有限制，大家都会关机，然而今天我们讨论的话题是远程开机——WakeOnLan…
+APPWOL这款应用是跨平台的，github上有个用perl写的，原先perl写的不支持域名，不过你可以找到我修改后支持域名的那款。
+那次分享我使用的手机远程开启我家电脑，之所以选择手机是因为手机方便，选择的应用是：net.mafro.android.wakeonlan">
+<meta property="og:image" content="pic/Wake_On_Lan.png">
+<meta property="og:image" content="pic/BIOS_WOL.BMP">
+<meta property="og:image" content="pic/OS_WOL.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="wake on lan/wan">
+<meta name="twitter:description" content="我是怎么远程开启我家电脑的WOL：远程登录后只要没有限制，大家都会关机，然而今天我们讨论的话题是远程开机——WakeOnLan…
+APPWOL这款应用是跨平台的，github上有个用perl写的，原先perl写的不支持域名，不过你可以找到我修改后支持域名的那款。
+那次分享我使用的手机远程开启我家电脑，之所以选择手机是因为手机方便，选择的应用是：net.mafro.android.wakeonlan">
+
+  
+    <link rel="alternative" href="/atom.xml" title="公输目" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">公输目</a>
+    <div class="collapse navbar-collapse nav-menu">
+      <ul class="nav navbar-nav">
+      
+        <li>
+          <a href="/archives">
+            <i class="fa fa-archive"></i>
+            Archives
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categories">
+            <i class="fa fa-folder"></i>
+            Categories
+          </a>
+        </li>
+      
+        <li>
+          <a href="/tags">
+            <i class="fa fa-tags"></i>
+            Tags
+          </a>
+        </li>
+      
+        <li>
+          <a href="/wiki">
+            <i class="fa fa-book"></i>
+            Wiki
+          </a>
+        </li>
+      
+        <li>
+          <a href="/about">
+            <i class="fa fa-user"></i>
+            About
+          </a>
+        </li>
+      
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a id="rss-link" href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="clearfix"></div>
+
+      <div id='content' class="container">
+
+        <div class="page-header-wrapper">
+          <!--[if lt IE 9]><div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>提示:</strong>您的浏览器版本太低了,建议升级到 <strong><a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" title="IE9">IE9</a></strong> 以上,本站使用<a href="https://www.google.com/intl/zh-CN/chrome/">Chrome浏览器</a>可以获得最好的显示效果.</div><![endif]-->
+          <div class="page-header">
+            <h1 class="title">
+          
+            wake on lan/wan
+          
+            </h1>
+        </div>
+      </div>
+      
+      <section id="main"
+        
+      ><article id="post-gnrpaut5l65dwjvu" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div id="toc"><span class="toc-header">Contents</span><ol class="article-toc"><li class="article-toc-item article-toc-level-2"><a class="article-toc-link" href="#app"><span class="article-toc-text">APP</span></a><ol class="article-toc-child"><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#let's-go"><span class="article-toc-text">Let's GO</span></a></li><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#ddns"><span class="article-toc-text">DDNS</span></a></li><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#magic-packet"><span class="article-toc-text">Magic Packet</span></a></li></ol></li><li class="article-toc-item article-toc-level-2"><a class="article-toc-link" href="#udp转发"><span class="article-toc-text">UDP转发</span></a></li><li class="article-toc-item article-toc-level-2"><a class="article-toc-link" href="#wake"><span class="article-toc-text">Wake</span></a></li><li class="article-toc-item article-toc-level-2"><a class="article-toc-link" href="#安全&应用"><span class="article-toc-text">安全&应用</span></a></li></ol></li><li class="article-toc-item article-toc-level-1"><a class="article-toc-link" href="#总结"><span class="article-toc-text">总结</span></a></div><p>我是怎么远程开启我家电脑的WOL：远程登录后只要没有限制，大家都会关机，然而今天我们讨论的话题是远程开机——WakeOnLan…</p>
+<h2 id="app">APP</h2><p>WOL这款应用是跨平台的，github上有个用perl写的，原先perl写的不支持域名，不过你可以找到我修改后支持域名的那款。
+那次分享我使用的手机远程开启我家电脑，之所以选择手机是因为手机方便，选择的应用是：net.mafro.android.wakeonlan (Google Play 的应用id，搜WOL有好几款，我选这个的原因是小，需要权限少)</p>
+<h3 id="let&#39;s-go">Let&#39;s GO</h3><p>在应用界面配上我家路由器的IP(我用DDNS有一个免费域名)，Port还有需要开机的MAC，如下图：
+<img src="pic/Wake_On_Lan.png" alt="WOL APP">
+填好表单，点击发送，会产生一个“Magic Packet”，并发出…</p>
+<h3 id="ddns">DDNS</h3><p>TP-LINK路由器一般默认就有，注册账号，在路由器配置自动登录即可，我家宽带是拨号上网，没有固定IP(但庆幸的是是一个外网IP，电信曾 调整成内网映射IP，我投诉后又恢复成外网IP)，DDNS负责登录后将路由器外网地址映射到一个域名上，如我的是xxx.oicp.net，通 过DNS查询就获得了路由器的真实地址，为了保证可用性，我将路由联网模式改成了：总是连接，而不是默认的按需连接(按需连接，只会在内部有网络 访问时才路由器才真正联网，我需要从外部连，所以改成总是)</p>
+<h3 id="magic-packet">Magic Packet</h3><p>具体定义请参考维基百科，一个具有特殊头部的UDP包，主要信息是网卡MAC信息重复三次</p>
+<h2 id="udp转发">UDP转发</h2><p>发出的“Magic Packet”通过网络到达了路由器，如果你家路由器支持广播，那么恭喜你，你将该条消息直接在路由器内网广播即可，默认端口是9或者7…
+如果不支持广播，先是设置端口转发，你家电脑需要设置静态IP，或者通过路由器绑定一个IP，同时你还需要ARP绑定，一切配置 OK，“Magic Packet”可以到达电脑网卡了…</p>
+<h2 id="wake">Wake</h2><p>问题成功从Wake On Wan 转化成 Wake On Lan，进入电脑BIOS设置下，允许网卡唤醒(只要你家的电脑不是古董，这个功能应该都有，还有就是网卡也需要支持)，如图：
+<img src="pic/BIOS_WOL.BMP" alt="BIOS SETTING">
+注：Windows 可能需要进系统，网卡设置允许“Magic Package”魔包唤醒，如下图：
+<img src="pic/OS_WOL.png" alt="Windows SETTING"></p>
+<h2 id="安全&amp;应用">安全&amp;应用</h2><p>Lan是相对安全的，路由器可以通过MAC过滤，不要泄漏你的MAC等信息。这个仅能开机和关机，对于几乎不会关机的服务器来说，开机没什么不安 全的。（确保你的PC像服务器那样安全）
+最佳应用是用在托管机房的远程开机，我们机房的测试机等也可以采用……</p>
+<h1 id="总结">总结</h1><p>本文从手机发出UDP包，简述了远程开机原理及实现，如果你需要配置远程开机，可能需要将整个过程倒过来，先在局域网内广播唤醒，最后用手机数据 流量或其他电脑远程唤醒(开机或从待机欢迎)。</p>
+
+      
+    </div>
+  </div>
+</article>
+
+
+</section>
+        
+          
+<aside id="sidebar">
+  
+    
+      
+<div class="widget-wrap center">
+  <ul class="pagination">
+    <li>
+      
+        <a href="/2016/01/12/multisystem/" class="nav-prev">Prev</a>
+      
+    </li>
+    <li>
+      <a data-url="http://gshmu.github.io/2016/01/11/wol/" data-id="gnrpaut5l65dwjvu" data_title="wake on lan/wan"
+        data_summary="我是怎么远程开启我家电脑的WOL：远程登录后只要没有限制，大家都会关机，然而今天我们讨论的话题是远程开机——WakeOnLan…
+APPWOL这款应用是跨平台的，github上有个用per..." class="article-share-link">Share</a>
+    </li>
+    <li>
+      
+        <a href="/2015/12/08/vps/" class="nav-next">Next</a>
+      
+    </li>
+  </ul>
+</div>
+
+
+    
+      <div class="widget-wrap">
+  <div class="post-widget">
+    <i class="fa fa-clock-o"></i>
+    <time datetime="2016-01-10T16:00:00.000Z" itemprop="datePublished">Jan 11 2016</time>
+  </div>
+</div>
+
+    
+      
+  <div class="widget-wrap">
+    <div class="post-widget">
+      <i class="fa fa-folder"></i>
+      <a class="category-link" href="/categories/Config/">Config<span class="category-count">2</span></a>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="post-widget">
+      <i class="fa fa-tags"></i>
+      <a class="tag-link" href="/tags/config/">config<span class="tag-count">5</span></a><a class="tag-link" href="/tags/play/">play<span class="tag-count">3</span></a><a class="tag-link" href="/tags/wol/">wol<span class="tag-count">1</span></a>
+    </div>
+  </div>
+
+
+    
+  
+</aside>
+
+
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer container">
+    <div id="footer-info" class="inner">
+      <a href="/">公输目</a> &copy; 2017 Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/seff/nut" target="_blank">Nut</a>
+    </div>
+  </div>
+</footer>
+<a id="gotop" href="#">
+  <i class="fa fa-chevron-up"></i>
+</a>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="[object Object]" class="mobile-nav-link">0</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">1</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">2</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">3</a>
+  
+    <a href="[object Object]" class="mobile-nav-link">4</a>
+  
+</nav>
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="/js/jquery.fitvids.js" type="text/javascript"></script>
+
+<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+  </div>
+</body>
+</html>
