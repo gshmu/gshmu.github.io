@@ -4,15 +4,15 @@
 
 # Site
 title: 公输目
-subtitle: 技之不精，由于多心。		——师旷
+subtitle: 愿有岁月可回首，且以深情共白头。
 description: 公输目|gshmu|mhohai|blog|python|Linux|shell
 author: gshmu
-email:
+email: mhohai@aim.com
 language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://gshmu.github.io
+url: http://gshmu.tk
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
