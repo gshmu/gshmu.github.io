@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2017/2 | 公输目</title>
+  <title>byobu startup | 公输目</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="公输目|gshmu|mhohai|blog|python|Linux|shell">
-<meta property="og:type" content="website">
-<meta property="og:title" content="公输目">
-<meta property="og:url" content="http://gshmu.tk/archives/2017/02/">
+  <meta name="description" content="相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和cssh有一比），还可在服务器端保留你的工作状态，可以极大的提高效率。
+byobu让进程在后台运行，注销后而不退出，你或许知道nohup，但这个也是byobu的最基本功能之一，与nohup相比，byobu给人更熟悉的感觉。久而久之，我就喜欢上了，可是如何在VPS上">
+<meta property="og:type" content="article">
+<meta property="og:title" content="byobu startup">
+<meta property="og:url" content="http://gshmu.tk/2017/02/19/byobu/">
 <meta property="og:site_name" content="公输目">
-<meta property="og:description" content="公输目|gshmu|mhohai|blog|python|Linux|shell">
+<meta property="og:description" content="相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和cssh有一比），还可在服务器端保留你的工作状态，可以极大的提高效率。
+byobu让进程在后台运行，注销后而不退出，你或许知道nohup，但这个也是byobu的最基本功能之一，与nohup相比，byobu给人更熟悉的感觉。久而久之，我就喜欢上了，可是如何在VPS上">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="公输目">
-<meta name="twitter:description" content="公输目|gshmu|mhohai|blog|python|Linux|shell">
+<meta name="twitter:title" content="byobu startup">
+<meta name="twitter:description" content="相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和cssh有一比），还可在服务器端保留你的工作状态，可以极大的提高效率。
+byobu让进程在后台运行，注销后而不退出，你或许知道nohup，但这个也是byobu的最基本功能之一，与nohup相比，byobu给人更熟悉的感觉。久而久之，我就喜欢上了，可是如何在VPS上">
 
   
     <link rel="alternative" href="/atom.xml" title="公输目" type="application/atom+xml">
@@ -101,9 +104,7 @@
           <div class="page-header">
             <h1 class="title">
           
-            
-              <time datetime="2017-02-19T11:23:07.472Z" itemprop="datePublished">February 2017</time>
-            
+            byobu startup
           
             </h1>
         </div>
@@ -111,38 +112,14 @@
       
       <section id="main"
         
-      >
-
-  
-
-
-
-  
-    <article id="post-2onstfccral6yl91" class="article article-type-post" itemscope itemprop="blogPost">
+      ><article id="post-2onstfccral6yl91" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
 
     
-      <header class="article-header">
-        <i class="fa fa-file-text-o"></i>
-        
-  
-    <h1 class="archive-title" itemprop="name">
-      <a class="article-title" href="/2017/02/19/byobu/">byobu startup</a>
-    </h1>
-  
-
-
-        <div class="article-date">
-  <time datetime="2017-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2017</time>
-</div>
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        
-          <p>相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和<code>cssh</code>有一比），还可在服务器端保留你的工作状态，可以极大的提高效率。</p>
+        <div id="toc"><span class="toc-header">Contents</span><ol class="article-toc"><li class="article-toc-item article-toc-level-2"><a class="article-toc-link" href="#byobu"><span class="article-toc-text">byobu</span></a><ol class="article-toc-child"><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#code"><span class="article-toc-text">code</span></a></li></ol></li><li class="article-toc-item article-toc-level-2"><a class="article-toc-link" href="#ssh"><span class="article-toc-text">ssh</span></a><ol class="article-toc-child"><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#default-shell"><span class="article-toc-text">default shell</span></a></li></ol></li></ol></li><li class="article-toc-item article-toc-level-1"><a class="article-toc-link" href="#end"><span class="article-toc-text">END</span></a></div><p>相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和<code>cssh</code>有一比），还可在服务器端保留你的工作状态，可以极大的提高效率。</p>
 <h2 id="byobu">byobu</h2><p>让进程在后台运行，注销后而不退出，你或许知道<code>nohup</code>，但这个也是<code>byobu</code>的最基本功能之一，与<code>nohup</code>相比，<code>byobu</code>给人更熟悉的感觉。久而久之，我就喜欢上了，可是如何在VPS上开机/重启后自动执行指定命令呢？</p>
 <h3 id="code">code</h3><p>配置相关的我看了不少资料，也尝试了不少。最后写了如下shell:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="shebang">#!/usr/bin/env bash</span></div><div class="line"><span class="comment"># byobu</span></div><div class="line"><span class="built_in">cd</span> /root/</div><div class="line">byobu new-session <span class="operator">-d</span> -n - <span class="string">"your command one"</span></div><div class="line">byobu new-window -n - <span class="string">"your command ..."</span></div><div class="line">byobu new-window -n - <span class="string">"your command ..."</span></div><div class="line">byobu new-window -n - <span class="string">"your command ..."</span></div></pre></td></tr></table></figure>
@@ -153,96 +130,10 @@
 <h3 id="default-shell">default shell</h3><p>如果想ssh登录默认使用byobu，可以修改<code>/etc/passwd</code>中指定的默认shell。注意：默认的shell还有<code>/bin/false</code>和<code>/usr/sbin/nologin</code>daemon专用的，禁止登录用的。还有一种<code>/bin/rbash</code>，改天有时间，容我细细道来。</p>
 <h1 id="end">END</h1><p>程序猿都是有偏执的，预想的事情终于实现了，VPS重启后，登录上去的界面好熟悉。</p>
 
-        
-        <footer class="article-footer">
-          <a data-url="http://gshmu.tk/2017/02/19/byobu/" data-id="2onstfccral6yl91" data_title="byobu startup"
-          data_summary="相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和cssh有一比），还可在服务器端保留你的..." class="article-share-link">Share</a>
-          
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
-  </div>
-
-
-          
-<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/byobu/">byobu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/config/">config</a></li></ul>
-
-
-        </footer>
       
     </div>
   </div>
 </article>
-
-
-  
-    <article id="post-5nnfr8q80s2pv6fb" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        <i class="fa fa-file-text-o"></i>
-        
-  
-    <h1 class="archive-title" itemprop="name">
-      <a class="article-title" href="/2017/02/19/summary/">summary</a>
-    </h1>
-  
-
-
-        <div class="article-date">
-  <time datetime="2017-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2017</time>
-</div>
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <p>博客有挺长一段时间没有更新了，主要是因为很多东西发布在了内网，在内网中含有代码/配置是可以无所顾及随意发的，还会有意外收获的。</p>
-<h2 id="逃亡说">逃亡说</h2><p>下面来讲一个故事，《连载逃亡》，博客中有几篇时间很紧的就是那个时候写的，不过还有一部分，没有同步……</p>
-<p>上班还是比较忙碌的，所以写东西渐渐便少了，便计划逼自己一把，于是乎：有一天在小群里扬言，我要连载一周。这下群里的小伙伴都是监督者，蔡姐姐也被我卷进了风波中。</p>
-<h3 id="war">war</h3><p>仅算工作日，预留两天buffer，然后开始投稿，预约下周一开始发布。</p>
-<ul>
-<li>Wake On Lan  远程开我家电脑并远程</li>
-<li>multi-system  我把双系统放入vBox并行</li>
-<li>pass  分享了个脚本</li>
-<li>Android Feast  来吃安卓大餐</li>
-<li>chrome APK  跟大牛一起玩chrome，奔跑吧APK</li>
-<li>SSH Party  SSH派对</li>
-<li>pass  refine-SVN-update 略</li>
-<li>lvs bug  晒了下浏览器插件</li>
-</ul>
-<p>起初在连载的压力下，每天找时间写点东西，感觉真真好，不过后来由于有“霸场”嫌疑，连载中断了，此事便告一段落。</p>
-<h1 id="the-end">the End</h1><p>连载逃亡，是一个系列，有时候心有多大，能力就有多大。</p>
-
-        
-        <footer class="article-footer">
-          <a data-url="http://gshmu.tk/2017/02/19/summary/" data-id="5nnfr8q80s2pv6fb" data_title="summary"
-          data_summary="博客有挺长一段时间没有更新了，主要是因为很多东西发布在了内网，在内网中含有代码/配置是可以无所顾及随意发的，还会有意外收获的。
-逃亡说下面来讲一个故事，《连载逃亡..." class="article-share-link">Share</a>
-          
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Other/">Other</a>
-  </div>
-
-
-          
-<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/life/">life</a></li></ul>
-
-
-        </footer>
-      
-    </div>
-  </div>
-</article>
-
-
-  
-  
-
 
 
 </section>
@@ -251,40 +142,41 @@
 <aside id="sidebar">
   
     
+      
+<div class="widget-wrap center">
+  <ul class="pagination">
+    <li>
+      
+        <span class="nav-prev disabled">Prev</span>
+      
+    </li>
+    <li>
+      <a data-url="http://gshmu.tk/2017/02/19/byobu/" data-id="2onstfccral6yl91" data_title="byobu startup"
+        data_summary="相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和cssh有一比），还可在服务器端保留你的..." class="article-share-link">Share</a>
+    </li>
+    <li>
+      
+        <a href="/2017/02/19/summary/" class="nav-next">Next</a>
+      
+    </li>
+  </ul>
+</div>
+
+
+    
       <div class="widget-wrap">
-    <div id="search-form-wrap">
-      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://gshmu.tk"></form>
-    </div>
+  <div class="post-widget">
+    <i class="fa fa-clock-o"></i>
+    <time datetime="2017-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2017</time>
+  </div>
 </div>
 
     
       
   <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li class="recent-list">
-            <a href="/2017/02/19/byobu/">byobu startup</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2017/02/19/summary/">summary</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2017/01/10/robots/">robots.txt</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2016/01/29/lvs-magic/">lvs bug</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2016/01/21/ssh-party/">ssh party</a>
-          </li>
-        
-      </ul>
+    <div class="post-widget">
+      <i class="fa fa-folder"></i>
+      <a class="category-link" href="/categories/Linux/">Linux<span class="category-count">11</span></a>
     </div>
   </div>
 
@@ -292,25 +184,9 @@
     
       
   <div class="widget-wrap">
-    <h3 class="widget-title">Links</h3>
-    <div class="widget">
-      <ul>
-        
-         <li class="blogroll">
-           
-             <i class="fa fa-github"></i>
-           
-           <a href="https://github.com/" title="Github">Github</a>
-          </li>
-        
-         <li class="blogroll">
-           
-             <i class="fa fa-google-plus"></i>
-           
-           <a href="https://plus.google.com/" title="Google+">Google+</a>
-          </li>
-        
-      </ul>
+    <div class="post-widget">
+      <i class="fa fa-tags"></i>
+      <a class="tag-link" href="/tags/byobu/">byobu<span class="tag-count">1</span></a><a class="tag-link" href="/tags/config/">config<span class="tag-count">6</span></a>
     </div>
   </div>
 

@@ -118,6 +118,64 @@
 
 
   
+    <article id="post-2onstfccral6yl91" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        <i class="fa fa-file-text-o"></i>
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2017/02/19/byobu/">byobu startup</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2017-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2017</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p>相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和<code>cssh</code>有一比），还可在服务器端保留你的工作状态，可以极大的提高效率。</p>
+<h2 id="byobu">byobu</h2><p>让进程在后台运行，注销后而不退出，你或许知道<code>nohup</code>，但这个也是<code>byobu</code>的最基本功能之一，与<code>nohup</code>相比，<code>byobu</code>给人更熟悉的感觉。久而久之，我就喜欢上了，可是如何在VPS上开机/重启后自动执行指定命令呢？</p>
+<h3 id="code">code</h3><p>配置相关的我看了不少资料，也尝试了不少。最后写了如下shell:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="shebang">#!/usr/bin/env bash</span></div><div class="line"><span class="comment"># byobu</span></div><div class="line"><span class="built_in">cd</span> /root/</div><div class="line">byobu new-session <span class="operator">-d</span> -n - <span class="string">"your command one"</span></div><div class="line">byobu new-window -n - <span class="string">"your command ..."</span></div><div class="line">byobu new-window -n - <span class="string">"your command ..."</span></div><div class="line">byobu new-window -n - <span class="string">"your command ..."</span></div></pre></td></tr></table></figure>
+
+<p>这个脚本在登录后，执行下，确实能达到预想的效果，但是自动执行却不可以。。。</p>
+<h2 id="ssh">ssh</h2><p>最后无奈之下使用了简单粗暴的办法，在<code>/etc/rc.local</code>中添加一行：
+<code>ssh -p22222 -i /root/.ssh/id_rsa root@localhost /etc/init.d/gshmu.sh</code></p>
+<h3 id="default-shell">default shell</h3><p>如果想ssh登录默认使用byobu，可以修改<code>/etc/passwd</code>中指定的默认shell。注意：默认的shell还有<code>/bin/false</code>和<code>/usr/sbin/nologin</code>daemon专用的，禁止登录用的。还有一种<code>/bin/rbash</code>，改天有时间，容我细细道来。</p>
+<h1 id="end">END</h1><p>程序猿都是有偏执的，预想的事情终于实现了，VPS重启后，登录上去的界面好熟悉。</p>
+
+        
+        <footer class="article-footer">
+          <a data-url="http://gshmu.tk/2017/02/19/byobu/" data-id="2onstfccral6yl91" data_title="byobu startup"
+          data_summary="相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和cssh有一比），还可在服务器端保留你的..." class="article-share-link">Share</a>
+          
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/byobu/">byobu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/config/">config</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
     <article id="post-5nnfr8q80s2pv6fb" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -264,6 +322,10 @@
       <ul>
         
           <li class="recent-list">
+            <a href="/2017/02/19/byobu/">byobu startup</a>
+          </li>
+        
+          <li class="recent-list">
             <a href="/2017/02/19/summary/">summary</a>
           </li>
         
@@ -277,10 +339,6 @@
         
           <li class="recent-list">
             <a href="/2016/01/21/ssh-party/">ssh party</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2016/01/15/chrome-apk/">chrome apk</a>
           </li>
         
       </ul>

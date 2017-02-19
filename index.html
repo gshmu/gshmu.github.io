@@ -111,6 +111,64 @@
         
       >
   
+    <article id="post-2onstfccral6yl91" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        <i class="fa fa-file-text-o"></i>
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2017/02/19/byobu/">byobu startup</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2017-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2017</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p>相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和<code>cssh</code>有一比），还可在服务器端保留你的工作状态，可以极大的提高效率。</p>
+<h2 id="byobu">byobu</h2><p>让进程在后台运行，注销后而不退出，你或许知道<code>nohup</code>，但这个也是<code>byobu</code>的最基本功能之一，与<code>nohup</code>相比，<code>byobu</code>给人更熟悉的感觉。久而久之，我就喜欢上了，可是如何在VPS上开机/重启后自动执行指定命令呢？</p>
+<h3 id="code">code</h3><p>配置相关的我看了不少资料，也尝试了不少。最后写了如下shell:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="shebang">#!/usr/bin/env bash</span></div><div class="line"><span class="comment"># byobu</span></div><div class="line"><span class="built_in">cd</span> /root/</div><div class="line">byobu new-session <span class="operator">-d</span> -n - <span class="string">"your command one"</span></div><div class="line">byobu new-window -n - <span class="string">"your command ..."</span></div><div class="line">byobu new-window -n - <span class="string">"your command ..."</span></div><div class="line">byobu new-window -n - <span class="string">"your command ..."</span></div></pre></td></tr></table></figure>
+
+<p>这个脚本在登录后，执行下，确实能达到预想的效果，但是自动执行却不可以。。。</p>
+<h2 id="ssh">ssh</h2><p>最后无奈之下使用了简单粗暴的办法，在<code>/etc/rc.local</code>中添加一行：
+<code>ssh -p22222 -i /root/.ssh/id_rsa root@localhost /etc/init.d/gshmu.sh</code></p>
+<h3 id="default-shell">default shell</h3><p>如果想ssh登录默认使用byobu，可以修改<code>/etc/passwd</code>中指定的默认shell。注意：默认的shell还有<code>/bin/false</code>和<code>/usr/sbin/nologin</code>daemon专用的，禁止登录用的。还有一种<code>/bin/rbash</code>，改天有时间，容我细细道来。</p>
+<h1 id="end">END</h1><p>程序猿都是有偏执的，预想的事情终于实现了，VPS重启后，登录上去的界面好熟悉。</p>
+
+        
+        <footer class="article-footer">
+          <a data-url="http://gshmu.tk/2017/02/19/byobu/" data-id="2onstfccral6yl91" data_title="byobu startup"
+          data_summary="相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和cssh有一比），还可在服务器端保留你的..." class="article-share-link">Share</a>
+          
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/byobu/">byobu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/config/">config</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
     <article id="post-5nnfr8q80s2pv6fb" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -674,80 +732,6 @@ APPWOL这款应用是跨平台的，github上有个用per..." class="article-sha
 
 
   
-    <article id="post-0m4m946su8y1imx9" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        <i class="fa fa-file-text-o"></i>
-        
-  
-    <h1 class="archive-title" itemprop="name">
-      <a class="article-title" href="/2015/12/08/vps/">a cup of vps</a>
-    </h1>
-  
-
-
-        <div class="article-date">
-  <time datetime="2015-12-07T16:00:00.000Z" itemprop="datePublished">Dec 8 2015</time>
-</div>
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <p>习惯了谷歌搜索，还真的离不开了…(本文后面更新过)</p>
-<h1 id="buy-vps">Buy VPS</h1><p>购买个VPS吧，选了款便宜点的，<a href="https://bandwagonhost.com/">bandwagon</a> 19.9$/Y（支持支付宝付款），这个我是新来的，就不搬门弄斧了…
-购买成功后，操作系统选Ubuntu16.04，和我现在用的一样，主要是方便，首次密码登录添加公钥，安卓可以使用JuiceSSH客户端。。。</p>
-<h2 id="shadowsocks">shadowsocks</h2><p>先装个服务吧，本着不折腾的折腾原则。</p>
-<h3 id="server">server</h3><p>先启动个服务吧，脚本奉上：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apt-get <span class="operator"><span class="keyword">update</span> && apt-<span class="keyword">get</span> -y <span class="keyword">install</span> python-pip && pip <span class="keyword">install</span> -U pip && pip <span class="keyword">install</span> shadowsocks</span></div></pre></td></tr></table></figure>
-
-<p>安装完毕，可以直接用命令<code>ssserver</code>启动服务，推荐写个json，参数不懂问<code>man</code>老师，或者帮助，官网文档都可以。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">echo '{</div><div class="line">   <span class="string">"server"</span>:<span class="string">"0.0.0.0"</span>,</div><div class="line">   <span class="string">"server_port"</span>:<span class="number">88</span>,</div><div class="line">   <span class="string">"password"</span>:<span class="string">"yourpassword"</span>,</div><div class="line">    <span class="string">"timeout"</span>:<span class="number">300</span>,</div><div class="line">   <span class="string">"method"</span>:<span class="string">"aes-256-cfb"</span>,</div><div class="line">   <span class="string">"fast_open"</span>: <span class="built_in">false</span></div><div class="line">}</div><div class="line">' &gt; /etc/shadowsocks.json</div><div class="line"></div><div class="line">ssserver -<span class="built_in">c</span> /etc/shadowsocks.json</div></pre></td></tr></table></figure>
-
-<p>至此服务端启动OK，其中端口和密码自己设置。</p>
-<h3 id="client">client</h3><p>安装方式一样，只是启动的时候用<code>sslocal</code>命令，可以直接指定参数启动，也可以写个配置文件。
-推荐火狐浏览器，因为火狐浏览器有单独的网络配置，而chrome等用的系统代理配置。</p>
-<h2 id="nginx">nginx</h2><p>大家对nginx和gunicorn（uwsgi的一种）一定不陌生，其中有个名词叫反向代理，我的理解nginx反向代理是，自己有的（像js，css之类的）直接给你，没有的，去找gunicorn取来后给你。</p>
-<h3 id="apply">Apply</h3><p>“Nginx, Show me google homepage...” 没有取了来给我，哈哈哈 :) 
-不要想太复杂，<a href="https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md">Github</a>上有现成的（我不喜欢编译，但偶尔编译下还是可以滴），注有个组建我更新了下，然后configure命令修改后是下面这样的：(前两个版本号稍有更新)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">apt-<span class="built_in">get</span> -<span class="keyword">y</span> install build-essential git gcc <span class="keyword">g</span>++ <span class="keyword">make</span> && <span class="built_in">mkdir</span> wen.<span class="keyword">lu</span> && <span class="keyword">cd</span> wen.<span class="keyword">lu</span> && git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/cuber/ngx_http_google_filter_module && git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/yaoweibin/ngx_http_substitutions_filter_module && wget <span class="string">"http://nginx.org/download/nginx-1.10.2.tar.gz"</span> && tar xzvf nginx-<span class="number">1.10</span>.<span class="number">2</span>.tar.gz && wget <span class="string">"ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.gz"</span> && tar xzvf pcre-<span class="number">8.39</span>.tar.gz && wget <span class="string">"http://zlib.net/zlib-1.2.8.tar.gz"</span> && tar xzvf zlib-<span class="number">1.2</span>.<span class="number">8</span>.tar.gz &&  wget <span class="string">"https://www.openssl.org/source/openssl-1.1.0c.tar.gz"</span> && tar xzvf openssl-<span class="number">1.1</span>.<span class="number">0</span><span class="keyword">c</span>.tar.gz && <span class="keyword">cd</span> nginx-<span class="number">1.10</span>.<span class="number">2</span> && \</div><div class="line">./configure \</div><div class="line">  --prefix=/<span class="keyword">opt</span>/nginx-<span class="number">1.10</span>.<span class="number">2</span> \</div><div class="line">  --with-pcre=../pcre-<span class="number">8.39</span> \</div><div class="line">  --with-openssl=../openssl-<span class="number">1.1</span>.<span class="number">0</span><span class="keyword">c</span> \</div><div class="line">  --with-zlib=../zlib-<span class="number">1.2</span>.<span class="number">8</span> \</div><div class="line">  --with-http_ssl_module \</div><div class="line">  --<span class="built_in">add</span>-module=../ngx_http_google_filter_module \</div><div class="line">  --<span class="built_in">add</span>-module=../ngx_http_substitutions_filter_module && \</div><div class="line"><span class="keyword">make</span> && \</div><div class="line"><span class="keyword">make</span> install</div></pre></td></tr></table></figure>
-
-<p>下来修改下配置，修改的地方如下：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="title">resolver</span> <span class="number">8.8.8.8</span>;</div><div class="line"><span class="title">location</span> / {</div><div class="line">  <span class="title">google</span> <span class="built_in">on</span>;</div><div class="line">  <span class="title">google_language</span> <span class="string">"ca"</span>; </div><div class="line">}</div></pre></td></tr></table></figure>
-
-<p>然后启动ngins，访问[My VPS HIDE]，久违的谷歌出现了。
-http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使用证书需要域名，免费域名申请的较晚，所以https及证书支持较晚。</p>
-<h1 id="the-end">the End</h1><p><a href="https://github.com/m4free/vps">all in one last.</a>  感谢阅读，我本地代理默认监听0.0.0.0，局域网的小伙伴有福了哈。</p>
-
-        
-        <footer class="article-footer">
-          <a data-url="http://gshmu.tk/2015/12/08/vps/" data-id="0m4m946su8y1imx9" data_title="a cup of vps"
-          data_summary="习惯了谷歌搜索，还真的离不开了…(本文后面更新过)
-Buy VPS购买个VPS吧，选了款便宜点的，bandwagon 19.9$/Y（支持支付宝付款），这个我是新来的，就不搬门弄斧了…
-购买成..." class="article-share-link">Share</a>
-          
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
-  </div>
-
-
-          
-<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/config/">config</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/deploy/">deploy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-info" href="/tags/linux/">linux</a></li></ul>
-
-
-        </footer>
-      
-    </div>
-  </div>
-</article>
-
-
-  
   
 <div class="center">
   <ul class="pagination">
@@ -787,7 +771,7 @@ Buy VPS购买个VPS吧，选了款便宜点的，bandwagon 19.9$/Y（支持支�
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <a class="category-link" href="/categories/Config/">Config<span class="category-count">2</span></a><a class="category-link" href="/categories/Git/">Git<span class="category-count">2</span></a><a class="category-link" href="/categories/Linux/">Linux<span class="category-count">10</span></a><a class="category-link" href="/categories/MySQL/">MySQL<span class="category-count">1</span></a><a class="category-link" href="/categories/Other/">Other<span class="category-count">4</span></a><a class="category-link" href="/categories/Python/">Python<span class="category-count">6</span></a><a class="category-link" href="/categories/regex/">regex<span class="category-count">1</span></a>
+      <a class="category-link" href="/categories/Config/">Config<span class="category-count">2</span></a><a class="category-link" href="/categories/Git/">Git<span class="category-count">2</span></a><a class="category-link" href="/categories/Linux/">Linux<span class="category-count">11</span></a><a class="category-link" href="/categories/MySQL/">MySQL<span class="category-count">1</span></a><a class="category-link" href="/categories/Other/">Other<span class="category-count">4</span></a><a class="category-link" href="/categories/Python/">Python<span class="category-count">6</span></a><a class="category-link" href="/categories/regex/">regex<span class="category-count">1</span></a>
     </div>
   </div>
 
@@ -797,7 +781,7 @@ Buy VPS购买个VPS吧，选了款便宜点的，bandwagon 19.9$/Y（支持支�
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <a class="tag-link" href="/tags/advanced/">advanced<span class="tag-count">6</span></a><a class="tag-link" href="/tags/bash/">bash<span class="tag-count">1</span></a><a class="tag-link" href="/tags/bool/">bool<span class="tag-count">2</span></a><a class="tag-link" href="/tags/bug/">bug<span class="tag-count">1</span></a><a class="tag-link" href="/tags/config/">config<span class="tag-count">5</span></a><a class="tag-link" href="/tags/debug/">debug<span class="tag-count">1</span></a><a class="tag-link" href="/tags/deploy/">deploy<span class="tag-count">1</span></a><a class="tag-link" href="/tags/django/">django<span class="tag-count">1</span></a><a class="tag-link" href="/tags/force/">force<span class="tag-count">1</span></a><a class="tag-link" href="/tags/git/">git<span class="tag-count">2</span></a><a class="tag-link" href="/tags/grub/">grub<span class="tag-count">1</span></a><a class="tag-link" href="/tags/idea/">idea<span class="tag-count">1</span></a><a class="tag-link" href="/tags/life/">life<span class="tag-count">4</span></a><a class="tag-link" href="/tags/linux/">linux<span class="tag-count">5</span></a><a class="tag-link" href="/tags/lvs/">lvs<span class="tag-count">1</span></a><a class="tag-link" href="/tags/mysql/">mysql<span class="tag-count">1</span></a><a class="tag-link" href="/tags/play/">play<span class="tag-count">3</span></a><a class="tag-link" href="/tags/python/">python<span class="tag-count">6</span></a><a class="tag-link" href="/tags/pythonic/">pythonic<span class="tag-count">2</span></a><a class="tag-link" href="/tags/regex/">regex<span class="tag-count">1</span></a><a class="tag-link" href="/tags/slice/">slice<span class="tag-count">1</span></a><a class="tag-link" href="/tags/sys/">sys<span class="tag-count">1</span></a><a class="tag-link" href="/tags/tuple/">tuple<span class="tag-count">1</span></a><a class="tag-link" href="/tags/wol/">wol<span class="tag-count">1</span></a>
+      <a class="tag-link" href="/tags/advanced/">advanced<span class="tag-count">6</span></a><a class="tag-link" href="/tags/bash/">bash<span class="tag-count">1</span></a><a class="tag-link" href="/tags/bool/">bool<span class="tag-count">2</span></a><a class="tag-link" href="/tags/bug/">bug<span class="tag-count">1</span></a><a class="tag-link" href="/tags/byobu/">byobu<span class="tag-count">1</span></a><a class="tag-link" href="/tags/config/">config<span class="tag-count">6</span></a><a class="tag-link" href="/tags/debug/">debug<span class="tag-count">1</span></a><a class="tag-link" href="/tags/deploy/">deploy<span class="tag-count">1</span></a><a class="tag-link" href="/tags/django/">django<span class="tag-count">1</span></a><a class="tag-link" href="/tags/force/">force<span class="tag-count">1</span></a><a class="tag-link" href="/tags/git/">git<span class="tag-count">2</span></a><a class="tag-link" href="/tags/grub/">grub<span class="tag-count">1</span></a><a class="tag-link" href="/tags/idea/">idea<span class="tag-count">1</span></a><a class="tag-link" href="/tags/life/">life<span class="tag-count">4</span></a><a class="tag-link" href="/tags/linux/">linux<span class="tag-count">5</span></a><a class="tag-link" href="/tags/lvs/">lvs<span class="tag-count">1</span></a><a class="tag-link" href="/tags/mysql/">mysql<span class="tag-count">1</span></a><a class="tag-link" href="/tags/play/">play<span class="tag-count">3</span></a><a class="tag-link" href="/tags/python/">python<span class="tag-count">6</span></a><a class="tag-link" href="/tags/pythonic/">pythonic<span class="tag-count">2</span></a><a class="tag-link" href="/tags/regex/">regex<span class="tag-count">1</span></a><a class="tag-link" href="/tags/slice/">slice<span class="tag-count">1</span></a><a class="tag-link" href="/tags/sys/">sys<span class="tag-count">1</span></a><a class="tag-link" href="/tags/tuple/">tuple<span class="tag-count">1</span></a><a class="tag-link" href="/tags/wol/">wol<span class="tag-count">1</span></a>
     </div>
   </div>
 
@@ -807,7 +791,7 @@ Buy VPS购买个VPS吧，选了款便宜点的，bandwagon 19.9$/Y（支持支�
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">August 2014</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">August 2014</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 

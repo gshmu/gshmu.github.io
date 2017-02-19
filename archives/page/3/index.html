@@ -118,6 +118,75 @@
 
 
   
+    <article id="post-vzhysxzu4hndsog7" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        <i class="fa fa-file-text-o"></i>
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2014/10/14/slice/">slice</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2014-10-14T02:46:19.000Z" itemprop="datePublished">Oct 14 2014</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p>“不会slice，绝不能说会python”，slice的重要性不言而喻。</p>
+<h2 id="basis">Basis</h2><ul>
+<li>index start with 0</li>
+<li>support negtive index</li>
+<li>[included:excluded:step] eg: <strong><code>[:]</code></strong>, <strong><code>[::-1]</code></strong></li>
+<li>work with list, tuple and string</li>
+</ul>
+<h2 id="step">step</h2><figure class="highlight python"><figcaption><span>Ipython 中的示例</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">In [<span class="number">1</span>]: e = range(<span class="number">6</span>)</div><div class="line">  </div><div class="line">In [<span class="number">2</span>]: e</div><div class="line">Out[<span class="number">2</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line">  </div><div class="line">In [<span class="number">3</span>]: e[:]</div><div class="line">Out[<span class="number">3</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line">  </div><div class="line">In [<span class="number">4</span>]: e[<span class="number">6</span>]</div><div class="line">IndexError</div><div class="line">  </div><div class="line">In [<span class="number">5</span>]: e[<span class="number">5</span>]</div><div class="line">Out[<span class="number">5</span>]: <span class="number">5</span></div><div class="line">  </div><div class="line">In [<span class="number">6</span>]: e[:<span class="number">5</span>]</div><div class="line">Out[<span class="number">6</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</div><div class="line">  </div><div class="line">In [<span class="number">7</span>]: e[:<span class="number">6</span>]</div><div class="line">Out[<span class="number">7</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line">  </div><div class="line">In [<span class="number">8</span>]: e[::-<span class="number">1</span>]</div><div class="line">Out[<span class="number">8</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</div><div class="line">  </div><div class="line">In [<span class="number">9</span>]: e[<span class="number">6</span>:<span class="number">0</span>]</div><div class="line">Out[<span class="number">9</span>]: []</div><div class="line">  </div><div class="line">In [<span class="number">10</span>]: e[<span class="number">6</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">10</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line">  </div><div class="line">In [<span class="number">11</span>]: <span class="number">0</span> <span class="keyword">in</span> e[<span class="number">6</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">11</span>]: <span class="keyword">False</span></div><div class="line">  </div><div class="line">In [<span class="number">12</span>]: e[<span class="number">5</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">12</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line">  </div><div class="line">In [<span class="number">13</span>]: e[<span class="number">5</span>:<span class="number">0</span>:-<span class="number">1</span>] == e[<span class="number">6</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">13</span>]: <span class="keyword">True</span></div><div class="line">  </div><div class="line">In [<span class="number">14</span>]: e[-<span class="number">1</span>:-<span class="number">7</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">14</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</div><div class="line">  </div><div class="line">In [<span class="number">15</span>]: e[-<span class="number">1</span>:-<span class="number">7</span>:-<span class="number">1</span>] == e[::-<span class="number">1</span>]</div><div class="line">Out[<span class="number">15</span>]: <span class="keyword">True</span></div><div class="line">  </div><div class="line">In [<span class="number">16</span>]: e[-<span class="number">1</span>:-<span class="number">9</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">16</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</div><div class="line">  </div><div class="line">In [<span class="number">17</span>]: e[::-<span class="number">2</span>] == e[-<span class="number">1</span>:-<span class="number">7</span>:-<span class="number">2</span>]</div><div class="line">Out[<span class="number">17</span>]: <span class="keyword">True</span></div><div class="line">  </div><div class="line">In [<span class="number">18</span>]: e[::-<span class="number">2</span>] == e[-<span class="number">1</span>:-<span class="number">8</span>:-<span class="number">2</span>]</div><div class="line">Out[<span class="number">18</span>]: <span class="string">'Just do IT'</span></div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>e[::-1] == e[-1:-7:-1]</strong></li>
+<li>slice切片中索引可以超出实际范围</li>
+<li>带有步长的切片，索引顺序和步长方向一致</li>
+<li>切片总是新产生一个对象，而不是改变原有对象</li>
+</ul>
+<h2 id="总结">总结</h2><p><code>Just do IT</code></p>
+
+        
+        <footer class="article-footer">
+          <a data-url="http://gshmu.tk/2014/10/14/slice/" data-id="vzhysxzu4hndsog7" data_title="slice"
+          data_summary="“不会slice，绝不能说会python”，slice的重要性不言而喻。
+Basis
+index start with 0
+support negtive index
+[included:excluded:step] eg: [:], [::-1]
+work with list,..." class="article-share-link">Share</a>
+          
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/pythonic/">pythonic</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-info" href="/tags/slice/">slice</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
     <article id="post-e2fzd0ckpv4e7wy0" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -750,6 +819,10 @@ Op..." class="article-share-link">Share</a>
       <ul>
         
           <li class="recent-list">
+            <a href="/2017/02/19/byobu/">byobu startup</a>
+          </li>
+        
+          <li class="recent-list">
             <a href="/2017/02/19/summary/">summary</a>
           </li>
         
@@ -763,10 +836,6 @@ Op..." class="article-share-link">Share</a>
         
           <li class="recent-list">
             <a href="/2016/01/21/ssh-party/">ssh party</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2016/01/15/chrome-apk/">chrome apk</a>
           </li>
         
       </ul>

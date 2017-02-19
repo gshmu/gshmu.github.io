@@ -118,6 +118,80 @@
 
 
   
+    <article id="post-0m4m946su8y1imx9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        <i class="fa fa-file-text-o"></i>
+        
+  
+    <h1 class="archive-title" itemprop="name">
+      <a class="article-title" href="/2015/12/08/vps/">a cup of vps</a>
+    </h1>
+  
+
+
+        <div class="article-date">
+  <time datetime="2015-12-07T16:00:00.000Z" itemprop="datePublished">Dec 8 2015</time>
+</div>
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          <p>习惯了谷歌搜索，还真的离不开了…(本文后面更新过)</p>
+<h1 id="buy-vps">Buy VPS</h1><p>购买个VPS吧，选了款便宜点的，<a href="https://bandwagonhost.com/">bandwagon</a> 19.9$/Y（支持支付宝付款），这个我是新来的，就不搬门弄斧了…
+购买成功后，操作系统选Ubuntu16.04，和我现在用的一样，主要是方便，首次密码登录添加公钥，安卓可以使用JuiceSSH客户端。。。</p>
+<h2 id="shadowsocks">shadowsocks</h2><p>先装个服务吧，本着不折腾的折腾原则。</p>
+<h3 id="server">server</h3><p>先启动个服务吧，脚本奉上：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apt-get <span class="operator"><span class="keyword">update</span> && apt-<span class="keyword">get</span> -y <span class="keyword">install</span> python-pip && pip <span class="keyword">install</span> -U pip && pip <span class="keyword">install</span> shadowsocks</span></div></pre></td></tr></table></figure>
+
+<p>安装完毕，可以直接用命令<code>ssserver</code>启动服务，推荐写个json，参数不懂问<code>man</code>老师，或者帮助，官网文档都可以。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">echo '{</div><div class="line">   <span class="string">"server"</span>:<span class="string">"0.0.0.0"</span>,</div><div class="line">   <span class="string">"server_port"</span>:<span class="number">88</span>,</div><div class="line">   <span class="string">"password"</span>:<span class="string">"yourpassword"</span>,</div><div class="line">    <span class="string">"timeout"</span>:<span class="number">300</span>,</div><div class="line">   <span class="string">"method"</span>:<span class="string">"aes-256-cfb"</span>,</div><div class="line">   <span class="string">"fast_open"</span>: <span class="built_in">false</span></div><div class="line">}</div><div class="line">' &gt; /etc/shadowsocks.json</div><div class="line"></div><div class="line">ssserver -<span class="built_in">c</span> /etc/shadowsocks.json</div></pre></td></tr></table></figure>
+
+<p>至此服务端启动OK，其中端口和密码自己设置。</p>
+<h3 id="client">client</h3><p>安装方式一样，只是启动的时候用<code>sslocal</code>命令，可以直接指定参数启动，也可以写个配置文件。
+推荐火狐浏览器，因为火狐浏览器有单独的网络配置，而chrome等用的系统代理配置。</p>
+<h2 id="nginx">nginx</h2><p>大家对nginx和gunicorn（uwsgi的一种）一定不陌生，其中有个名词叫反向代理，我的理解nginx反向代理是，自己有的（像js，css之类的）直接给你，没有的，去找gunicorn取来后给你。</p>
+<h3 id="apply">Apply</h3><p>“Nginx, Show me google homepage...” 没有取了来给我，哈哈哈 :) 
+不要想太复杂，<a href="https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md">Github</a>上有现成的（我不喜欢编译，但偶尔编译下还是可以滴），注有个组建我更新了下，然后configure命令修改后是下面这样的：(前两个版本号稍有更新)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">apt-<span class="built_in">get</span> -<span class="keyword">y</span> install build-essential git gcc <span class="keyword">g</span>++ <span class="keyword">make</span> && <span class="built_in">mkdir</span> wen.<span class="keyword">lu</span> && <span class="keyword">cd</span> wen.<span class="keyword">lu</span> && git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/cuber/ngx_http_google_filter_module && git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/yaoweibin/ngx_http_substitutions_filter_module && wget <span class="string">"http://nginx.org/download/nginx-1.10.2.tar.gz"</span> && tar xzvf nginx-<span class="number">1.10</span>.<span class="number">2</span>.tar.gz && wget <span class="string">"ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.gz"</span> && tar xzvf pcre-<span class="number">8.39</span>.tar.gz && wget <span class="string">"http://zlib.net/zlib-1.2.8.tar.gz"</span> && tar xzvf zlib-<span class="number">1.2</span>.<span class="number">8</span>.tar.gz &&  wget <span class="string">"https://www.openssl.org/source/openssl-1.1.0c.tar.gz"</span> && tar xzvf openssl-<span class="number">1.1</span>.<span class="number">0</span><span class="keyword">c</span>.tar.gz && <span class="keyword">cd</span> nginx-<span class="number">1.10</span>.<span class="number">2</span> && \</div><div class="line">./configure \</div><div class="line">  --prefix=/<span class="keyword">opt</span>/nginx-<span class="number">1.10</span>.<span class="number">2</span> \</div><div class="line">  --with-pcre=../pcre-<span class="number">8.39</span> \</div><div class="line">  --with-openssl=../openssl-<span class="number">1.1</span>.<span class="number">0</span><span class="keyword">c</span> \</div><div class="line">  --with-zlib=../zlib-<span class="number">1.2</span>.<span class="number">8</span> \</div><div class="line">  --with-http_ssl_module \</div><div class="line">  --<span class="built_in">add</span>-module=../ngx_http_google_filter_module \</div><div class="line">  --<span class="built_in">add</span>-module=../ngx_http_substitutions_filter_module && \</div><div class="line"><span class="keyword">make</span> && \</div><div class="line"><span class="keyword">make</span> install</div></pre></td></tr></table></figure>
+
+<p>下来修改下配置，修改的地方如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="title">resolver</span> <span class="number">8.8.8.8</span>;</div><div class="line"><span class="title">location</span> / {</div><div class="line">  <span class="title">google</span> <span class="built_in">on</span>;</div><div class="line">  <span class="title">google_language</span> <span class="string">"ca"</span>; </div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>然后启动ngins，访问[My VPS HIDE]，久违的谷歌出现了。
+http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使用证书需要域名，免费域名申请的较晚，所以https及证书支持较晚。</p>
+<h1 id="the-end">the End</h1><p><a href="https://github.com/m4free/vps">all in one last.</a>  感谢阅读，我本地代理默认监听0.0.0.0，局域网的小伙伴有福了哈。</p>
+
+        
+        <footer class="article-footer">
+          <a data-url="http://gshmu.tk/2015/12/08/vps/" data-id="0m4m946su8y1imx9" data_title="a cup of vps"
+          data_summary="习惯了谷歌搜索，还真的离不开了…(本文后面更新过)
+Buy VPS购买个VPS吧，选了款便宜点的，bandwagon 19.9$/Y（支持支付宝付款），这个我是新来的，就不搬门弄斧了…
+购买成..." class="article-share-link">Share</a>
+          
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+
+          
+<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/config/">config</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/deploy/">deploy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-info" href="/tags/linux/">linux</a></li></ul>
+
+
+        </footer>
+      
+    </div>
+  </div>
+</article>
+
+
+  
     <article id="post-8savefrcpfbz1hpm" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -632,75 +706,6 @@ Q重命名的时候一般不会有问题，可是在分支切换的同时，由�
 
 
   
-    <article id="post-vzhysxzu4hndsog7" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        <i class="fa fa-file-text-o"></i>
-        
-  
-    <h1 class="archive-title" itemprop="name">
-      <a class="article-title" href="/2014/10/14/slice/">slice</a>
-    </h1>
-  
-
-
-        <div class="article-date">
-  <time datetime="2014-10-14T02:46:19.000Z" itemprop="datePublished">Oct 14 2014</time>
-</div>
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-          <p>“不会slice，绝不能说会python”，slice的重要性不言而喻。</p>
-<h2 id="basis">Basis</h2><ul>
-<li>index start with 0</li>
-<li>support negtive index</li>
-<li>[included:excluded:step] eg: <strong><code>[:]</code></strong>, <strong><code>[::-1]</code></strong></li>
-<li>work with list, tuple and string</li>
-</ul>
-<h2 id="step">step</h2><figure class="highlight python"><figcaption><span>Ipython 中的示例</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">In [<span class="number">1</span>]: e = range(<span class="number">6</span>)</div><div class="line">  </div><div class="line">In [<span class="number">2</span>]: e</div><div class="line">Out[<span class="number">2</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line">  </div><div class="line">In [<span class="number">3</span>]: e[:]</div><div class="line">Out[<span class="number">3</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line">  </div><div class="line">In [<span class="number">4</span>]: e[<span class="number">6</span>]</div><div class="line">IndexError</div><div class="line">  </div><div class="line">In [<span class="number">5</span>]: e[<span class="number">5</span>]</div><div class="line">Out[<span class="number">5</span>]: <span class="number">5</span></div><div class="line">  </div><div class="line">In [<span class="number">6</span>]: e[:<span class="number">5</span>]</div><div class="line">Out[<span class="number">6</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</div><div class="line">  </div><div class="line">In [<span class="number">7</span>]: e[:<span class="number">6</span>]</div><div class="line">Out[<span class="number">7</span>]: [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line">  </div><div class="line">In [<span class="number">8</span>]: e[::-<span class="number">1</span>]</div><div class="line">Out[<span class="number">8</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</div><div class="line">  </div><div class="line">In [<span class="number">9</span>]: e[<span class="number">6</span>:<span class="number">0</span>]</div><div class="line">Out[<span class="number">9</span>]: []</div><div class="line">  </div><div class="line">In [<span class="number">10</span>]: e[<span class="number">6</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">10</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line">  </div><div class="line">In [<span class="number">11</span>]: <span class="number">0</span> <span class="keyword">in</span> e[<span class="number">6</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">11</span>]: <span class="keyword">False</span></div><div class="line">  </div><div class="line">In [<span class="number">12</span>]: e[<span class="number">5</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">12</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line">  </div><div class="line">In [<span class="number">13</span>]: e[<span class="number">5</span>:<span class="number">0</span>:-<span class="number">1</span>] == e[<span class="number">6</span>:<span class="number">0</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">13</span>]: <span class="keyword">True</span></div><div class="line">  </div><div class="line">In [<span class="number">14</span>]: e[-<span class="number">1</span>:-<span class="number">7</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">14</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</div><div class="line">  </div><div class="line">In [<span class="number">15</span>]: e[-<span class="number">1</span>:-<span class="number">7</span>:-<span class="number">1</span>] == e[::-<span class="number">1</span>]</div><div class="line">Out[<span class="number">15</span>]: <span class="keyword">True</span></div><div class="line">  </div><div class="line">In [<span class="number">16</span>]: e[-<span class="number">1</span>:-<span class="number">9</span>:-<span class="number">1</span>]</div><div class="line">Out[<span class="number">16</span>]: [<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">0</span>]</div><div class="line">  </div><div class="line">In [<span class="number">17</span>]: e[::-<span class="number">2</span>] == e[-<span class="number">1</span>:-<span class="number">7</span>:-<span class="number">2</span>]</div><div class="line">Out[<span class="number">17</span>]: <span class="keyword">True</span></div><div class="line">  </div><div class="line">In [<span class="number">18</span>]: e[::-<span class="number">2</span>] == e[-<span class="number">1</span>:-<span class="number">8</span>:-<span class="number">2</span>]</div><div class="line">Out[<span class="number">18</span>]: <span class="string">'Just do IT'</span></div></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>e[::-1] == e[-1:-7:-1]</strong></li>
-<li>slice切片中索引可以超出实际范围</li>
-<li>带有步长的切片，索引顺序和步长方向一致</li>
-<li>切片总是新产生一个对象，而不是改变原有对象</li>
-</ul>
-<h2 id="总结">总结</h2><p><code>Just do IT</code></p>
-
-        
-        <footer class="article-footer">
-          <a data-url="http://gshmu.tk/2014/10/14/slice/" data-id="vzhysxzu4hndsog7" data_title="slice"
-          data_summary="“不会slice，绝不能说会python”，slice的重要性不言而喻。
-Basis
-index start with 0
-support negtive index
-[included:excluded:step] eg: [:], [::-1]
-work with list,..." class="article-share-link">Share</a>
-          
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Python/">Python</a>
-  </div>
-
-
-          
-<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link label label-primary" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-success" href="/tags/pythonic/">pythonic</a></li><li class="article-tag-list-item"><a class="article-tag-list-link label label-info" href="/tags/slice/">slice</a></li></ul>
-
-
-        </footer>
-      
-    </div>
-  </div>
-</article>
-
-
-  
   
 <div class="center">
   <ul class="pagination">
@@ -743,6 +748,10 @@ work with list,..." class="article-share-link">Share</a>
       <ul>
         
           <li class="recent-list">
+            <a href="/2017/02/19/byobu/">byobu startup</a>
+          </li>
+        
+          <li class="recent-list">
             <a href="/2017/02/19/summary/">summary</a>
           </li>
         
@@ -756,10 +765,6 @@ work with list,..." class="article-share-link">Share</a>
         
           <li class="recent-list">
             <a href="/2016/01/21/ssh-party/">ssh party</a>
-          </li>
-        
-          <li class="recent-list">
-            <a href="/2016/01/15/chrome-apk/">chrome apk</a>
           </li>
         
       </ul>
