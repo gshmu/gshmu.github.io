@@ -3,7 +3,7 @@ date: 2016-01-14
 categories: Linux
 tags: [advanced, play]
 ---
-![Android Feast](pic/Android_Feast.png)
+![Android Feast](/pic/Android_Feast.png)
 我的设备我做主，我的地盘我是老大……
 
 ## SDK

@@ -11,7 +11,7 @@ WOL这款应用是跨平台的，github上有个用perl写的，原先perl写的
 
 ### Let's GO
 在应用界面配上我家路由器的IP(我用DDNS有一个免费域名)，Port还有需要开机的MAC，如下图：
-![WOL APP](pic/Wake_On_Lan.png)
+![WOL APP](/pic/Wake_On_Lan.png)
 填好表单，点击发送，会产生一个“Magic Packet”，并发出…
 
 ### DDNS
@@ -26,9 +26,9 @@ TP-LINK路由器一般默认就有，注册账号，在路由器配置自动登�
 
 ## Wake
 问题成功从Wake On Wan 转化成 Wake On Lan，进入电脑BIOS设置下，允许网卡唤醒(只要你家的电脑不是古董，这个功能应该都有，还有就是网卡也需要支持)，如图：
-![BIOS SETTING](pic/BIOS_WOL.BMP)
+![BIOS SETTING](/pic/BIOS_WOL.BMP)
 注：Windows 可能需要进系统，网卡设置允许“Magic Package”魔包唤醒，如下图：
-![Windows SETTING](pic/OS_WOL.png)
+![Windows SETTING](/pic/OS_WOL.png)
 
 ## 安全&应用
 Lan是相对安全的，路由器可以通过MAC过滤，不要泄漏你的MAC等信息。这个仅能开机和关机，对于几乎不会关机的服务器来说，开机没什么不安 全的。（确保你的PC像服务器那样安全）

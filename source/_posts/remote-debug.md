@@ -7,7 +7,7 @@ tags: [python, debug, idea]
 
 ## Debug Configurations
 先上图：
-![Debug Configurations](pic/Run-Debug-Configurations.png)
+![Debug Configurations](/pic/Run-Debug-Configurations.png)
 * 1： 这是一个django服务的示例
 * 2： 选择的是服务器（Remote）运行环境interpreter
 * 3： **本地和远端path mapping**
@@ -17,13 +17,13 @@ SSH最基本的通讯协议，服务器和测试服务器没有不开的吧。
 
 ### Remote Interpreter
 Interpreter 解释器，使用python的对虚拟环境`virtualenv`应该都不陌生，我们首先需要一个和服务器一样的运行环境。
-![Setting add Interpreter](pic/Settings_add.png)
+![Setting add Interpreter](/pic/Settings_add.png)
 按照顺序操作到4，点击Add Remote(如下图)，SSH配置完点OK。
-![Configure Remote Python Interpreter](pic/Configure-Remote-Python-Interpreter.png)
+![Configure Remote Python Interpreter](/pic/Configure-Remote-Python-Interpreter.png)
 初次连接可能弹出提醒，确认即可，然后会回到设置主界面，切记点击**Apply**和**OK**。
 
 ### config mapping etc
-![Configure Server](pic/Configure-Server.png)
+![Configure Server](/pic/Configure-Server.png)
 单击向下的那个箭头，然后编辑配置，就回到了最开始那个图，配置好后用debug方式启动就可以远程调试了，吼吼
 
 ## Linux
@@ -38,7 +38,7 @@ Linux，所以直接挂载测试服务器文件：
 ### Windows
 感谢`永哥`，在windows下实现了，给大家扫雷了。在用户目录下新建`.ssh`文件夹和`known_hosts`文件，不然远程环境会无法建立。
 虽然用不了sshfs，但是可以sftp的，配置远程文件时，需要明确选下如图，虽然选后路径不变:
-![Remote Host File](pic/Remote_File.png)
+![Remote Host File](/pic/Remote_File.png)
 不选的话，远程文件可能不识别，识别后远程文件显示为绿色。
 
 ## 总结

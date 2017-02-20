@@ -3,7 +3,7 @@ date: 2016-01-15
 categories: Linux
 tags: [advanced, play]
 ---
-![跟大牛一起玩chrome，奔跑吧APK](pic/Ubuntu-chrome-apk.png)
+![跟大牛一起玩chrome，奔跑吧APK](/pic/Ubuntu-chrome-apk.png)
 [chromeos-apk](https://github.com/vladikoff/chromeos-apk):Run Android APKs on Chrome OS, OS X, Linux and Windows.  把安卓应用放到PC玩，有没有心动呢？然后一个不好的消息是，越不标准的应用越容易崩溃，比如某信和某宝。
 
 ## npm

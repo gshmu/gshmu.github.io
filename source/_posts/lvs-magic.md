@@ -13,9 +13,9 @@ lvs是网络负载均衡常用的一种方式，然而今天的重点并不是lv
 
 ### add-ons
 是插件作怪么，[Firefox addons](about:addons)/[chrome extensions](chrome://extensions/)，共同的插件没几个，晒图一张吧(仅Enable的插件)：
-![suggest add-ons](pic/My-Add-ons.png)
+![suggest add-ons](/pic/My-Add-ons.png)
 既然说到了插件，说说优雅排查插件问题的方法（禁用插件重启），如图：
-![disable add-ons restart](pic/add-ons-disable.png)
+![disable add-ons restart](/pic/add-ons-disable.png)
 
 ## …
 浏览器debug，日志错误之类，此处略过半小时…

@@ -4,7 +4,7 @@ categories: Config
 tags: [config, sys, linux]
 ---
 中文名：《我把双系统放入vBox并行》
-![WIN7HD](pic/win7hd.png)
+![WIN7HD](/pic/win7hd.png)
 双系统同时运行：宿主机Ubuntu，虚拟机DELL9020原装“正版”Win7。
 
 ## Linux

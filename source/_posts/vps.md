@@ -3,7 +3,7 @@ date: 2015-12-08
 categories: Linux
 tags: [linux, config, deploy]
 ---
-习惯了谷歌搜索，还真的离不开了…(本文后面更新过)
+习惯了谷歌搜索，还真的离不开了…  (注：本文更新过)
 
 # Buy VPS
 购买个VPS吧，选了款便宜点的，[bandwagon](https://bandwagonhost.com/) 19.9$/Y（支持支付宝付款），这个我是新来的，就不搬门弄斧了…
