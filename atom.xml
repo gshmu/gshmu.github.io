@@ -4,7 +4,7 @@
   <subtitle><![CDATA[愿有岁月可回首，且以深情共白头。]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://gshmu.tk/"/>
-  <updated>2017-02-19T11:23:07.022Z</updated>
+  <updated>2017-02-20T01:00:12.715Z</updated>
   <id>http://gshmu.tk/</id>
   
   <author>
@@ -379,8 +379,8 @@
     <link href="http://gshmu.tk/2015/12/08/vps/"/>
     <id>http://gshmu.tk/2015/12/08/vps/</id>
     <published>2015-12-07T16:00:00.000Z</published>
-    <updated>2017-02-19T09:45:15.000Z</updated>
-    <content type="html"><![CDATA[<p>习惯了谷歌搜索，还真的离不开了…(本文后面更新过)</p>
+    <updated>2017-02-20T01:00:01.000Z</updated>
+    <content type="html"><![CDATA[<p>习惯了谷歌搜索，还真的离不开了…  (注：本文更新过)</p>
 <h1 id="buy-vps">Buy VPS</h1><p>购买个VPS吧，选了款便宜点的，<a href="https://bandwagonhost.com/">bandwagon</a> 19.9$/Y（支持支付宝付款），这个我是新来的，就不搬门弄斧了…
 购买成功后，操作系统选Ubuntu16.04，和我现在用的一样，主要是方便，首次密码登录添加公钥，安卓可以使用JuiceSSH客户端。。。</p>
 <h2 id="shadowsocks">shadowsocks</h2><p>先装个服务吧，本着不折腾的折腾原则。</p>
@@ -406,8 +406,8 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 <h1 id="the-end">the End</h1><p><a href="https://github.com/m4free/vps">all in one last.</a>  感谢阅读，我本地代理默认监听0.0.0.0，局域网的小伙伴有福了哈。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>习惯了谷歌搜索，还真的离不开了…(本文后面更新过)</p>
-<h1 id="buy-vps">Buy VPS</h1><p>购买个VPS吧，选了款便宜点的，<a href="https://bandwagonhost.com/">bandwagon</a> 19.9$/Y（]]>
+    <![CDATA[<p>习惯了谷歌搜索，还真的离不开了…  (注：本文更新过)</p>
+<h1 id="buy-vps">Buy VPS</h1><p>购买个VPS吧，选了款便宜点的，<a href="https://bandwagonhost.com/">bandwagon</a> 19.9$/]]>
     </summary>
     
       <category term="linux" scheme="http://gshmu.tk/tags/linux/"/>
