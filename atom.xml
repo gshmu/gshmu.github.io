@@ -4,7 +4,7 @@
   <subtitle><![CDATA[愿有岁月可回首，且以深情共白头。]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://gshmu.tk/"/>
-  <updated>2017-02-20T01:00:12.715Z</updated>
+  <updated>2017-02-20T01:34:34.043Z</updated>
   <id>http://gshmu.tk/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://gshmu.tk/2017/02/19/byobu/"/>
     <id>http://gshmu.tk/2017/02/19/byobu/</id>
     <published>2017-02-18T16:00:00.000Z</published>
-    <updated>2017-02-19T11:22:48.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>相信很多人都知道byobu，Ubuntu下很赞的终端管理工具，很方便的管理多个窗口，还支持窗口分屏，也支持多个窗口执行同样的命令（这点和<code>cssh</code>有一比），还可在服务器端保留你的工作状态，可以极大的提高效率。</p>
 <h2 id="byobu">byobu</h2><p>让进程在后台运行，注销后而不退出，你或许知道<code>nohup</code>，但这个也是<code>byobu</code>的最基本功能之一，与<code>nohup</code>相比，<code>byobu</code>给人更熟悉的感觉。久而久之，我就喜欢上了，可是如何在VPS上开机/重启后自动执行指定命令呢？</p>
 <h3 id="code">code</h3><p>配置相关的我看了不少资料，也尝试了不少。最后写了如下shell:</p>
@@ -49,7 +49,7 @@
     <link href="http://gshmu.tk/2017/02/19/summary/"/>
     <id>http://gshmu.tk/2017/02/19/summary/</id>
     <published>2017-02-18T16:00:00.000Z</published>
-    <updated>2017-02-19T11:23:01.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>博客有挺长一段时间没有更新了，主要是因为很多东西发布在了内网，在内网中含有代码/配置是可以无所顾及随意发的，还会有意外收获的。</p>
 <h2 id="逃亡说">逃亡说</h2><p>下面来讲一个故事，《连载逃亡》，博客中有几篇时间很紧的就是那个时候写的，不过还有一部分，没有同步……</p>
 <p>上班还是比较忙碌的，所以写东西渐渐便少了，便计划逼自己一把，于是乎：有一天在小群里扬言，我要连载一周。这下群里的小伙伴都是监督者，蔡姐姐也被我卷进了风波中。</p>
@@ -83,7 +83,7 @@
     <link href="http://gshmu.tk/2017/01/10/robots/"/>
     <id>http://gshmu.tk/2017/01/10/robots/</id>
     <published>2017-01-09T16:00:00.000Z</published>
-    <updated>2017-02-19T09:41:16.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>中文名：一行代码，让客户侧设备远离搜索引擎魔爪
 为了让搜索引擎更好地为我们服务，大家都对SEO有所耳闻吧。然而有时候，卖给客户的设备，并不希望搜索引擎能够搜索到……</p>
 <h1 id="历史">历史</h1><p>我们的设备不应该暴露在搜索引擎头条，但是这个真的出现过，我们公司同事内部发出来的，以及在某些漏洞信息平台上… 客户该不该让某些设备暴露在公网，我们先不予讨论，本文讨论的是：设备暴露在公网之后</p>
@@ -110,14 +110,14 @@
     <link href="http://gshmu.tk/2016/01/29/lvs-magic/"/>
     <id>http://gshmu.tk/2016/01/29/lvs-magic/</id>
     <published>2016-01-28T16:00:00.000Z</published>
-    <updated>2017-02-16T12:28:37.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>lvs是网络负载均衡常用的一种方式，然而今天的重点并不是lvs，而是一个隐含的坑……</p>
 <h2 id="error">Error</h2><p>打开网页报表页面，显示有问题。然后是(firefox+chrome)*2，四种模式访问都有问题！注：四种模式——乘2是使用隐私模式，no cache，no cookies …，这个是相对清空浏览器缓存一种优雅的方式，还有一种是不清空强制刷新Ctrl+F5方式。</p>
 <h2 id="try-vm-again">Try VM again</h2><p>一切正常，一切正常有没有。。。</p>
 <h3 id="add-ons">add-ons</h3><p>是插件作怪么，<a href="about:addons">Firefox addons</a>/<a href="chrome://extensions/">chrome extensions</a>，共同的插件没几个，晒图一张吧(仅Enable的插件)：
-<img src="pic/My-Add-ons.png" alt="suggest add-ons">
+<img src="/pic/My-Add-ons.png" alt="suggest add-ons">
 既然说到了插件，说说优雅排查插件问题的方法（禁用插件重启），如图：
-<img src="pic/add-ons-disable.png" alt="disable add-ons restart"></p>
+<img src="/pic/add-ons-disable.png" alt="disable add-ons restart"></p>
 <h2 id="…">…</h2><p>浏览器debug，日志错误之类，此处略过半小时…</p>
 <h3 id="lvs">lvs</h3><p>时间刚好，wanglei5来上班了，王哥来瞅瞅：你的web有没有lvs...
 先是堡垒机前置机远程桌面，分别访问了两个不同地址，果然问题在这里。然后堡垒机登录有问题那台机器后台，上代码：</p>
@@ -143,7 +143,7 @@
     <link href="http://gshmu.tk/2016/01/21/ssh-party/"/>
     <id>http://gshmu.tk/2016/01/21/ssh-party/</id>
     <published>2016-01-20T16:00:00.000Z</published>
-    <updated>2017-02-19T09:41:44.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>SSH你是不是每天都在用，ssh可是一大家，今天开派对，首先清点下：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ ssh<span class="preprocessor">  # 双击Tab</span></div><div class="line">ssh               ssh-argv0         sshd              ssh-<span class="preprocessor"><span class="keyword">import</span>-id-gh  ssh-keyscan</span></div><div class="line">ssh-add           ssh-askpass       sshfs             ssh-<span class="preprocessor"><span class="keyword">import</span>-id-lp  sshmitm</span></div><div class="line">ssh-agent         ssh-copy-id       ssh-<span class="preprocessor"><span class="keyword">import</span>-id     ssh-keygen        sshow</span></div></pre></td></tr></table></figure>
 
@@ -195,8 +195,8 @@
     <link href="http://gshmu.tk/2016/01/15/chrome-apk/"/>
     <id>http://gshmu.tk/2016/01/15/chrome-apk/</id>
     <published>2016-01-14T16:00:00.000Z</published>
-    <updated>2017-02-19T09:38:47.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="pic/Ubuntu-chrome-apk.png" alt="跟大牛一起玩chrome，奔跑吧APK">
+    <updated>2017-02-20T01:23:25.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/pic/Ubuntu-chrome-apk.png" alt="跟大牛一起玩chrome，奔跑吧APK">
 <a href="https://github.com/vladikoff/chromeos-apk">chromeos-apk</a>:Run Android APKs on Chrome OS, OS X, Linux and Windows.  把安卓应用放到PC玩，有没有心动呢？然后一个不好的消息是，越不标准的应用越容易崩溃，比如某信和某宝。</p>
 <h2 id="npm">npm</h2><p><a href="http://nodejs.org/">Node.js</a> 火了，npm和Node.js的关系，借用官方的话说：
 &gt;
@@ -209,8 +209,8 @@
 <h2 id="end">END</h2><p>跟大牛有肉吃，至于问我为什么要这么大费周章，没人喜欢折腾，真的……  只是，以前手机内存小，庙太小，容不下大神，再加上安卓那令人发指的唤醒链，有些应用不想往手机装。最后还有个原因是我用Linux，Linux下出名的通讯问题大家都听过吧，可惜是鹅厂应用太不标准了！！！</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="pic/Ubuntu-chrome-apk.png" alt="跟大牛一起玩chrome，奔跑吧APK">
-<a href="https://github.com/vladikoff/chromeos-apk">chromeos-apk</a>:Run ]]>
+    <![CDATA[<p><img src="/pic/Ubuntu-chrome-apk.png" alt="跟大牛一起玩chrome，奔跑吧APK">
+<a href="https://github.com/vladikoff/chromeos-apk">chromeos-apk</a>:Run]]>
     </summary>
     
       <category term="advanced" scheme="http://gshmu.tk/tags/advanced/"/>
@@ -226,8 +226,8 @@
     <link href="http://gshmu.tk/2016/01/14/android-feast/"/>
     <id>http://gshmu.tk/2016/01/14/android-feast/</id>
     <published>2016-01-13T16:00:00.000Z</published>
-    <updated>2017-02-19T09:37:59.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="pic/Android_Feast.png" alt="Android Feast">
+    <updated>2017-02-20T01:23:25.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/pic/Android_Feast.png" alt="Android Feast">
 我的设备我做主，我的地盘我是老大……</p>
 <h2 id="sdk">SDK</h2><p>adb（Android Debug Bridge），Win下面一般装个驱动，下载exe就可以，稍微全一点的下载个androidSDK。Ubuntu下几条命名就可以<a href="https://developer.ubuntu.com/en/start/ubuntu-for-devices/installing-ubuntu-for-devices/"><code>$ apt-get install ubuntu-device-flash phablet-tools</code></a>
 注：我的识别稍有问题，连手机前后执行两次<code>lsusb</code>，连手机后多出来的一行：&quot;Bus 003 Device 008: ID <strong>29a9</strong>:701a&quot;，主要是找这个ID，还是上代码吧：</p>
@@ -267,9 +267,9 @@
 <h2 id="end">END</h2><p>手机慢，电池不够用么？  这年头电池很不错了，谁能告诉我，明明能作出好东西，为什么没有真正做出来几个好东西…</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="pic/Android_Feast.png" alt="Android Feast">
+    <![CDATA[<p><img src="/pic/Android_Feast.png" alt="Android Feast">
 我的设备我做主，我的地盘我是老大……</p>
-<h2 id="sdk">SDK</h2><p>adb（Android Debug Bridge），Win下面一般装个驱]]>
+<h2 id="sdk">SDK</h2><p>adb（Android Debug Bridge），Win下面一般装个]]>
     </summary>
     
       <category term="advanced" scheme="http://gshmu.tk/tags/advanced/"/>
@@ -285,9 +285,9 @@
     <link href="http://gshmu.tk/2016/01/12/multisystem/"/>
     <id>http://gshmu.tk/2016/01/12/multisystem/</id>
     <published>2016-01-11T16:00:00.000Z</published>
-    <updated>2017-02-19T09:40:22.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>中文名：《我把双系统放入vBox并行》
-<img src="pic/win7hd.png" alt="WIN7HD">
+<img src="/pic/win7hd.png" alt="WIN7HD">
 双系统同时运行：宿主机Ubuntu，虚拟机DELL9020原装“正版”Win7。</p>
 <h2 id="linux">Linux</h2><p>我用Linux办公，不喜盗版讨厌弹窗等等，不过我觉得用Linux是不需要理由的。领来新机直接U盘装Ubuntu 14.04 x64，看到大家用Windows居多，所以本着有备无患留下了Windows，grub直接引导就变成双系统，硬盘分区如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">~$ lsblk </div><div class="line">NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT</div><div class="line">sda      <span class="number">8</span>:<span class="number">0</span>    <span class="number">0</span> <span class="number">931.5</span>G  <span class="number">0</span> disk </div><div class="line">├─sda1   <span class="number">8</span>:<span class="number">1</span>    <span class="number">0</span>   <span class="number">100</span>M  <span class="number">0</span> part </div><div class="line">├─sda2   <span class="number">8</span>:<span class="number">2</span>    <span class="number">0</span> <span class="number">196.7</span>G  <span class="number">0</span> part </div><div class="line">├─sda3   <span class="number">8</span>:<span class="number">3</span>    <span class="number">0</span>     <span class="number">1</span>K  <span class="number">0</span> part </div><div class="line">├─sda5   <span class="number">8</span>:<span class="number">5</span>    <span class="number">0</span> <span class="number">186.3</span>G  <span class="number">0</span> part /</div><div class="line">└─sda6   <span class="number">8</span>:<span class="number">6</span>    <span class="number">0</span> <span class="number">279.4</span>G  <span class="number">0</span> part /home</div></pre></td></tr></table></figure>
@@ -320,9 +320,9 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>中文名：《我把双系统放入vBox并行》
-<img src="pic/win7hd.png" alt="WIN7HD">
+<img src="/pic/win7hd.png" alt="WIN7HD">
 双系统同时运行：宿主机Ubuntu，虚拟机DELL9020原装“正版”Win7。</p>
-<h2 id="linux">Linux</h2><p>我用Li]]>
+<h2 id="linux">Linux</h2><p>我用L]]>
     </summary>
     
       <category term="config" scheme="http://gshmu.tk/tags/config/"/>
@@ -340,21 +340,21 @@
     <link href="http://gshmu.tk/2016/01/11/wol/"/>
     <id>http://gshmu.tk/2016/01/11/wol/</id>
     <published>2016-01-10T16:00:00.000Z</published>
-    <updated>2017-02-19T09:43:12.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>我是怎么远程开启我家电脑的WOL：远程登录后只要没有限制，大家都会关机，然而今天我们讨论的话题是远程开机——WakeOnLan…</p>
 <h2 id="app">APP</h2><p>WOL这款应用是跨平台的，github上有个用perl写的，原先perl写的不支持域名，不过你可以找到我修改后支持域名的那款。
 那次分享我使用的手机远程开启我家电脑，之所以选择手机是因为手机方便，选择的应用是：net.mafro.android.wakeonlan (Google Play 的应用id，搜WOL有好几款，我选这个的原因是小，需要权限少)</p>
 <h3 id="let&#39;s-go">Let&#39;s GO</h3><p>在应用界面配上我家路由器的IP(我用DDNS有一个免费域名)，Port还有需要开机的MAC，如下图：
-<img src="pic/Wake_On_Lan.png" alt="WOL APP">
+<img src="/pic/Wake_On_Lan.png" alt="WOL APP">
 填好表单，点击发送，会产生一个“Magic Packet”，并发出…</p>
 <h3 id="ddns">DDNS</h3><p>TP-LINK路由器一般默认就有，注册账号，在路由器配置自动登录即可，我家宽带是拨号上网，没有固定IP(但庆幸的是是一个外网IP，电信曾 调整成内网映射IP，我投诉后又恢复成外网IP)，DDNS负责登录后将路由器外网地址映射到一个域名上，如我的是xxx.oicp.net，通 过DNS查询就获得了路由器的真实地址，为了保证可用性，我将路由联网模式改成了：总是连接，而不是默认的按需连接(按需连接，只会在内部有网络 访问时才路由器才真正联网，我需要从外部连，所以改成总是)</p>
 <h3 id="magic-packet">Magic Packet</h3><p>具体定义请参考维基百科，一个具有特殊头部的UDP包，主要信息是网卡MAC信息重复三次</p>
 <h2 id="udp转发">UDP转发</h2><p>发出的“Magic Packet”通过网络到达了路由器，如果你家路由器支持广播，那么恭喜你，你将该条消息直接在路由器内网广播即可，默认端口是9或者7…
 如果不支持广播，先是设置端口转发，你家电脑需要设置静态IP，或者通过路由器绑定一个IP，同时你还需要ARP绑定，一切配置 OK，“Magic Packet”可以到达电脑网卡了…</p>
 <h2 id="wake">Wake</h2><p>问题成功从Wake On Wan 转化成 Wake On Lan，进入电脑BIOS设置下，允许网卡唤醒(只要你家的电脑不是古董，这个功能应该都有，还有就是网卡也需要支持)，如图：
-<img src="pic/BIOS_WOL.BMP" alt="BIOS SETTING">
+<img src="/pic/BIOS_WOL.BMP" alt="BIOS SETTING">
 注：Windows 可能需要进系统，网卡设置允许“Magic Package”魔包唤醒，如下图：
-<img src="pic/OS_WOL.png" alt="Windows SETTING"></p>
+<img src="/pic/OS_WOL.png" alt="Windows SETTING"></p>
 <h2 id="安全&amp;应用">安全&amp;应用</h2><p>Lan是相对安全的，路由器可以通过MAC过滤，不要泄漏你的MAC等信息。这个仅能开机和关机，对于几乎不会关机的服务器来说，开机没什么不安 全的。（确保你的PC像服务器那样安全）
 最佳应用是用在托管机房的远程开机，我们机房的测试机等也可以采用……</p>
 <h1 id="总结">总结</h1><p>本文从手机发出UDP包，简述了远程开机原理及实现，如果你需要配置远程开机，可能需要将整个过程倒过来，先在局域网内广播唤醒，最后用手机数据 流量或其他电脑远程唤醒(开机或从待机欢迎)。</p>
@@ -379,7 +379,7 @@
     <link href="http://gshmu.tk/2015/12/08/vps/"/>
     <id>http://gshmu.tk/2015/12/08/vps/</id>
     <published>2015-12-07T16:00:00.000Z</published>
-    <updated>2017-02-20T01:00:01.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>习惯了谷歌搜索，还真的离不开了…  (注：本文更新过)</p>
 <h1 id="buy-vps">Buy VPS</h1><p>购买个VPS吧，选了款便宜点的，<a href="https://bandwagonhost.com/">bandwagon</a> 19.9$/Y（支持支付宝付款），这个我是新来的，就不搬门弄斧了…
 购买成功后，操作系统选Ubuntu16.04，和我现在用的一样，主要是方便，首次密码登录添加公钥，安卓可以使用JuiceSSH客户端。。。</p>
@@ -425,10 +425,10 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2015/07/02/remote-debug/"/>
     <id>http://gshmu.tk/2015/07/02/remote-debug/</id>
     <published>2015-07-01T16:00:00.000Z</published>
-    <updated>2017-02-19T09:41:07.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>你没有看错，Python Remote Debugger with PyCharm！本文是基于Python IDE：<a href="https://www.jetbrains.com/pycharm/">PyCharm</a>，主要介绍 Remote Debugger 的在 PyCharm 中的配置使用，本文希望传递一个消息，<strong>远程是可在IDE调试的</strong>，也希望大家能在以后的工作中调试起来…。</p>
 <h2 id="debug-configurations">Debug Configurations</h2><p>先上图：
-<img src="pic/Run-Debug-Configurations.png" alt="Debug Configurations"></p>
+<img src="/pic/Run-Debug-Configurations.png" alt="Debug Configurations"></p>
 <ul>
 <li>1： 这是一个django服务的示例</li>
 <li>2： 选择的是服务器（Remote）运行环境interpreter</li>
@@ -436,11 +436,11 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 </ul>
 <h3 id="ssh">SSH</h3><p>SSH最基本的通讯协议，服务器和测试服务器没有不开的吧。</p>
 <h3 id="remote-interpreter">Remote Interpreter</h3><p>Interpreter 解释器，使用python的对虚拟环境<code>virtualenv</code>应该都不陌生，我们首先需要一个和服务器一样的运行环境。
-<img src="pic/Settings_add.png" alt="Setting add Interpreter">
+<img src="/pic/Settings_add.png" alt="Setting add Interpreter">
 按照顺序操作到4，点击Add Remote(如下图)，SSH配置完点OK。
-<img src="pic/Configure-Remote-Python-Interpreter.png" alt="Configure Remote Python Interpreter">
+<img src="/pic/Configure-Remote-Python-Interpreter.png" alt="Configure Remote Python Interpreter">
 初次连接可能弹出提醒，确认即可，然后会回到设置主界面，切记点击<strong>Apply</strong>和<strong>OK</strong>。</p>
-<h3 id="config-mapping-etc">config mapping etc</h3><p><img src="pic/Configure-Server.png" alt="Configure Server">
+<h3 id="config-mapping-etc">config mapping etc</h3><p><img src="/pic/Configure-Server.png" alt="Configure Server">
 单击向下的那个箭头，然后编辑配置，就回到了最开始那个图，配置好后用debug方式启动就可以远程调试了，吼吼</p>
 <h2 id="linux">Linux</h2><p>远程调试已经完了，你可以很方便的在你本地以调试方式启动服务，在本地设置断点，然后使用服务器ip访问，捕获到断点是不成问题的，修改代码，PyCharm 也有同步的功能，但我还是喜欢下面的~</p>
 <h3 id="sshfs">sshfs</h3><p>Linux，所以直接挂载测试服务器文件：
@@ -449,7 +449,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
 附：取消挂载的命令<code>$ fusermount -u $point</code></p>
 <h3 id="windows">Windows</h3><p>感谢<code>永哥</code>，在windows下实现了，给大家扫雷了。在用户目录下新建<code>.ssh</code>文件夹和<code>known_hosts</code>文件，不然远程环境会无法建立。
 虽然用不了sshfs，但是可以sftp的，配置远程文件时，需要明确选下如图，虽然选后路径不变:
-<img src="pic/Remote_File.png" alt="Remote Host File">
+<img src="/pic/Remote_File.png" alt="Remote Host File">
 不选的话，远程文件可能不识别，识别后远程文件显示为绿色。</p>
 <h2 id="总结">总结</h2><p>本文希望能传递一个消息：<strong>远程是可调试的！</strong>希望大家以后能用起来，以后如何用好还请大家思考。最后，欢迎任何反馈。</p>
 ]]></content>
@@ -472,7 +472,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2015/04/08/rege-guide/"/>
     <id>http://gshmu.tk/2015/04/08/rege-guide/</id>
     <published>2015-04-07T16:00:00.000Z</published>
-    <updated>2017-02-19T09:40:53.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>不知不觉系统的学习正则已经一年了，特撰此文。推荐教材《精通正则表达式》英文名：&quot;mastering regular expressions&quot;，作者：Jeffrey E. F. Friedl。注：如果你看中文版时觉得代码有问题，请看原版，至少看原版的代码。</p>
 <h2 id="开门见山">开门见山</h2><p>元字符什么的我就不说了，先说说“环视”。顾名思义环视就是环顾四周，周围是根据当前位置（描点）确定的。环视的作用是环顾四周，但并不匹配（捕获）周围字符。根据描点的前面或后面，是或不是分为四种：正向肯定环视、正向否定环视、逆向肯定环视和逆向否定环视。</p>
 <p>说了环视，下来说捕获。捕获有捕捉，获取拿到之意。初学正则时，使用的都是捕获，如<code>\s</code>：捕获一个空白；<code>\d+</code>： 捕获至少一个数字。既然有捕获，就有非捕获，这里要说明的是环视是不捕获的，环视会确定一个位置点。</p>
@@ -496,7 +496,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2015/03/22/django-advanced/"/>
     <id>http://gshmu.tk/2015/03/22/django-advanced/</id>
     <published>2015-03-22T00:08:06.000Z</published>
-    <updated>2017-02-19T09:39:16.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>本文记述我在使用Django时遇到的两个问题，两次被坑的过程，也是两次进步的过程。</p>
 <h2 id="<code>qs[m:n].update()</code>"><code>qs[m:n].update()</code></h2><p>业务我就不多说了，给queryset（总数可能有十万之多）中的部分（以万记）更新某个字段（或者说分配到某个订单），由于要保证互斥，同时希望序列号连续（对应实体的东西，方便分取）所以使用<code>select_for_update()</code>，当然任何使用锁的地方应该确保尽可能少锁，同时尽快释放。</p>
 <p>问题出来了，如此多的数据，如果循环更新，锁的时间将会比较长，可是Django不支持切片后更新。办法：</p>
@@ -528,7 +528,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2015/03/10/advanced-linux/"/>
     <id>http://gshmu.tk/2015/03/10/advanced-linux/</id>
     <published>2015-03-09T16:00:00.000Z</published>
-    <updated>2017-02-19T09:37:20.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>本文介绍几个Ubuntu进阶的操作。</p>
 <h2 id="先晒晒我信攥的电脑">先晒晒我信攥的电脑</h2><ul>
 <li>CPU：E3-1231 V3 (3.4GHz*8 志强四核八线程)</li>
@@ -584,7 +584,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2015/03/10/assembled-computers/"/>
     <id>http://gshmu.tk/2015/03/10/assembled-computers/</id>
     <published>2015-03-09T16:00:00.000Z</published>
-    <updated>2017-02-19T09:38:18.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>欣赏台式机的性能，所以一直计划这亲自攥台PC，话说我真不懂攥机，权当是分享下“失败”的经验吧。</p>
 <h2 id="配单">配单</h2><ul>
 <li>CPU：E3-1231 V3 (3.4GHz*8 志强四核八线程)</li>
@@ -622,7 +622,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2014/12/22/come-back/"/>
     <id>http://gshmu.tk/2014/12/22/come-back/</id>
     <published>2014-12-21T16:00:00.000Z</published>
-    <updated>2017-02-19T09:39:01.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>我想家了，从大学开始，我距离家跨好几个省，在外边过的还算适应，一切也还好。工作后每年回一次家，可是就回这一次家，火车票买不到，我不得不考虑下在家附近工作了...</p>
 <h2 id="compare">Compare</h2><p>最近陷入深深的矛盾中，平时休息离家太远压根不可能想回家，过年一般也就七八天假，难得有一次要回家，可恶的12306，我没用任何刷票软件，我只是没有用IE罢了。我做好了一切准备，或许只是因为我准备了，换来了12306的“非法提交”，然后没然后了，我只是有点儿再也不想抢长途火车票的想法了...</p>
 <p>无可否认上海很不错，但我决定回家了，回家是不需要理由的，但：</p>
@@ -650,7 +650,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2014/12/18/learn-linux/"/>
     <id>http://gshmu.tk/2014/12/18/learn-linux/</id>
     <published>2014-12-17T16:00:00.000Z</published>
-    <updated>2017-02-19T09:39:53.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>许多尝试过Linux过的，说起Linux总是一堆问题，外加一堆不习惯。我厌倦了Windows，尤其是中国特色下的 Windows，厌倦了杀毒软件，厌倦了盗版软件，所以决定换Linux。在换Linux的过程中，不能说没有问题，但基本是一帆风顺的，所以计划写本文。</p>
 <h2 id="how-to-learn-linux?">How to learn Linux?</h2><p>说实话，我学Linux(Ubuntu)并不久，不敢妄言怎么去学Linux，只是分享下我是怎么学Linux的。</p>
 <h3 id="no-vms">No VMs</h3><p>不要用虚拟机，也不建议刚装Linux，在Linux下装虚拟机装Windows。虚拟机的性能会大打折扣，虚拟机下优盘挂载、共享文件、屏幕大小等也不是一开始就合适的，所以不建议使用虚拟机。</p>
@@ -681,7 +681,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2014/10/28/git-rename/"/>
     <id>http://gshmu.tk/2014/10/28/git-rename/</id>
     <published>2014-10-27T16:00:00.000Z</published>
-    <updated>2017-02-16T12:38:01.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<h2 id="why">Why</h2><p>项目多了，难免会有重命名的时候，重命名本身没什么问题，可是加上gitignore中的<code>*.pyc</code>或<code>*~</code>可能会出现些问题…</p>
 <h3 id="q">Q</h3><p>重命名的时候一般不会有问题，可是在分支切换的同时，由于存在ignore的文件，分支的切换并不会那么正确。
 往往会多出重命名前或重命名后的文件夹，多的原因就是文件夹下有被忽略的临时文件。</p>
@@ -704,7 +704,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2014/10/14/slice/"/>
     <id>http://gshmu.tk/2014/10/14/slice/</id>
     <published>2014-10-14T02:46:19.000Z</published>
-    <updated>2017-02-19T09:41:24.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p>“不会slice，绝不能说会python”，slice的重要性不言而喻。</p>
 <h2 id="basis">Basis</h2><ul>
 <li>index start with 0</li>
@@ -745,7 +745,7 @@ http支持了，https如今也已经支持，使用Let&#39;s encrypt证书，使
     <link href="http://gshmu.tk/2014/10/13/mailcap/"/>
     <id>http://gshmu.tk/2014/10/13/mailcap/</id>
     <published>2014-10-12T16:00:00.000Z</published>
-    <updated>2017-02-16T12:38:01.000Z</updated>
+    <updated>2017-02-20T01:23:25.000Z</updated>
     <content type="html"><![CDATA[<p><code>Tencent === Trash</code>，微云下载的文件总是用gedit打开，firefox如是说。有谁能想到，腾讯微云下载的文件有着一样错误的<code>Content-Type: &quot;application/octet-stream&quot;</code></p>
 <h3 id="<code>the-way-to-fix-it</code>"><code>The Way to fix it</code></h3><p>Ubuntu 下，命令行执行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">'application/octet-stream; nautilus --no-default-window --no-desktop %s; test=test -n "$DISPLAY"'</span> &gt;&gt; ~/.mailcap</div></pre></td></tr></table></figure>

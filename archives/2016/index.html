@@ -146,9 +146,9 @@
 <h2 id="error">Error</h2><p>打开网页报表页面，显示有问题。然后是(firefox+chrome)*2，四种模式访问都有问题！注：四种模式——乘2是使用隐私模式，no cache，no cookies …，这个是相对清空浏览器缓存一种优雅的方式，还有一种是不清空强制刷新Ctrl+F5方式。</p>
 <h2 id="try-vm-again">Try VM again</h2><p>一切正常，一切正常有没有。。。</p>
 <h3 id="add-ons">add-ons</h3><p>是插件作怪么，<a href="about:addons">Firefox addons</a>/<a href="chrome://extensions/">chrome extensions</a>，共同的插件没几个，晒图一张吧(仅Enable的插件)：
-<img src="pic/My-Add-ons.png" alt="suggest add-ons">
+<img src="/pic/My-Add-ons.png" alt="suggest add-ons">
 既然说到了插件，说说优雅排查插件问题的方法（禁用插件重启），如图：
-<img src="pic/add-ons-disable.png" alt="disable add-ons restart"></p>
+<img src="/pic/add-ons-disable.png" alt="disable add-ons restart"></p>
 <h2 id="…">…</h2><p>浏览器debug，日志错误之类，此处略过半小时…</p>
 <h3 id="lvs">lvs</h3><p>时间刚好，wanglei5来上班了，王哥来瞅瞅：你的web有没有lvs...
 先是堡垒机前置机远程桌面，分别访问了两个不同地址，果然问题在这里。然后堡垒机登录有问题那台机器后台，上代码：</p>
@@ -287,7 +287,7 @@ Error打开网页报表页面，显示有问题。然后是(firefox+chrome)*2，
     <div class="article-entry" itemprop="articleBody">
       
         
-          <p><img src="pic/Ubuntu-chrome-apk.png" alt="跟大牛一起玩chrome，奔跑吧APK">
+          <p><img src="/pic/Ubuntu-chrome-apk.png" alt="跟大牛一起玩chrome，奔跑吧APK">
 <a href="https://github.com/vladikoff/chromeos-apk">chromeos-apk</a>:Run Android APKs on Chrome OS, OS X, Linux and Windows.  把安卓应用放到PC玩，有没有心动呢？然后一个不好的消息是，越不标准的应用越容易崩溃，比如某信和某宝。</p>
 <h2 id="npm">npm</h2><p><a href="http://nodejs.org/">Node.js</a> 火了，npm和Node.js的关系，借用官方的话说：
 &gt;
@@ -347,7 +347,7 @@ chromeos-apk:Run Android APKs on Chrome OS, OS X, Linux and Windows.  把安卓�
     <div class="article-entry" itemprop="articleBody">
       
         
-          <p><img src="pic/Android_Feast.png" alt="Android Feast">
+          <p><img src="/pic/Android_Feast.png" alt="Android Feast">
 我的设备我做主，我的地盘我是老大……</p>
 <h2 id="sdk">SDK</h2><p>adb（Android Debug Bridge），Win下面一般装个驱动，下载exe就可以，稍微全一点的下载个androidSDK。Ubuntu下几条命名就可以<a href="https://developer.ubuntu.com/en/start/ubuntu-for-devices/installing-ubuntu-for-devices/"><code>$ apt-get install ubuntu-device-flash phablet-tools</code></a>
 注：我的识别稍有问题，连手机前后执行两次<code>lsusb</code>，连手机后多出来的一行：&quot;Bus 003 Device 008: ID <strong>29a9</strong>:701a&quot;，主要是找这个ID，还是上代码吧：</p>
@@ -436,7 +436,7 @@ SDKadb（Android Debug Bridge），Win下面一般装个驱动，下载exe就可
       
         
           <p>中文名：《我把双系统放入vBox并行》
-<img src="pic/win7hd.png" alt="WIN7HD">
+<img src="/pic/win7hd.png" alt="WIN7HD">
 双系统同时运行：宿主机Ubuntu，虚拟机DELL9020原装“正版”Win7。</p>
 <h2 id="linux">Linux</h2><p>我用Linux办公，不喜盗版讨厌弹窗等等，不过我觉得用Linux是不需要理由的。领来新机直接U盘装Ubuntu 14.04 x64，看到大家用Windows居多，所以本着有备无患留下了Windows，grub直接引导就变成双系统，硬盘分区如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">~$ lsblk </div><div class="line">NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT</div><div class="line">sda      <span class="number">8</span>:<span class="number">0</span>    <span class="number">0</span> <span class="number">931.5</span>G  <span class="number">0</span> disk </div><div class="line">├─sda1   <span class="number">8</span>:<span class="number">1</span>    <span class="number">0</span>   <span class="number">100</span>M  <span class="number">0</span> part </div><div class="line">├─sda2   <span class="number">8</span>:<span class="number">2</span>    <span class="number">0</span> <span class="number">196.7</span>G  <span class="number">0</span> part </div><div class="line">├─sda3   <span class="number">8</span>:<span class="number">3</span>    <span class="number">0</span>     <span class="number">1</span>K  <span class="number">0</span> part </div><div class="line">├─sda5   <span class="number">8</span>:<span class="number">5</span>    <span class="number">0</span> <span class="number">186.3</span>G  <span class="number">0</span> part /</div><div class="line">└─sda6   <span class="number">8</span>:<span class="number">6</span>    <span class="number">0</span> <span class="number">279.4</span>G  <span class="number">0</span> part /home</div></pre></td></tr></table></figure>
@@ -521,16 +521,16 @@ Linux我用Linux办公，不喜盗版讨厌弹窗等等，不过我觉得用Linu
 <h2 id="app">APP</h2><p>WOL这款应用是跨平台的，github上有个用perl写的，原先perl写的不支持域名，不过你可以找到我修改后支持域名的那款。
 那次分享我使用的手机远程开启我家电脑，之所以选择手机是因为手机方便，选择的应用是：net.mafro.android.wakeonlan (Google Play 的应用id，搜WOL有好几款，我选这个的原因是小，需要权限少)</p>
 <h3 id="let&#39;s-go">Let&#39;s GO</h3><p>在应用界面配上我家路由器的IP(我用DDNS有一个免费域名)，Port还有需要开机的MAC，如下图：
-<img src="pic/Wake_On_Lan.png" alt="WOL APP">
+<img src="/pic/Wake_On_Lan.png" alt="WOL APP">
 填好表单，点击发送，会产生一个“Magic Packet”，并发出…</p>
 <h3 id="ddns">DDNS</h3><p>TP-LINK路由器一般默认就有，注册账号，在路由器配置自动登录即可，我家宽带是拨号上网，没有固定IP(但庆幸的是是一个外网IP，电信曾 调整成内网映射IP，我投诉后又恢复成外网IP)，DDNS负责登录后将路由器外网地址映射到一个域名上，如我的是xxx.oicp.net，通 过DNS查询就获得了路由器的真实地址，为了保证可用性，我将路由联网模式改成了：总是连接，而不是默认的按需连接(按需连接，只会在内部有网络 访问时才路由器才真正联网，我需要从外部连，所以改成总是)</p>
 <h3 id="magic-packet">Magic Packet</h3><p>具体定义请参考维基百科，一个具有特殊头部的UDP包，主要信息是网卡MAC信息重复三次</p>
 <h2 id="udp转发">UDP转发</h2><p>发出的“Magic Packet”通过网络到达了路由器，如果你家路由器支持广播，那么恭喜你，你将该条消息直接在路由器内网广播即可，默认端口是9或者7…
 如果不支持广播，先是设置端口转发，你家电脑需要设置静态IP，或者通过路由器绑定一个IP，同时你还需要ARP绑定，一切配置 OK，“Magic Packet”可以到达电脑网卡了…</p>
 <h2 id="wake">Wake</h2><p>问题成功从Wake On Wan 转化成 Wake On Lan，进入电脑BIOS设置下，允许网卡唤醒(只要你家的电脑不是古董，这个功能应该都有，还有就是网卡也需要支持)，如图：
-<img src="pic/BIOS_WOL.BMP" alt="BIOS SETTING">
+<img src="/pic/BIOS_WOL.BMP" alt="BIOS SETTING">
 注：Windows 可能需要进系统，网卡设置允许“Magic Package”魔包唤醒，如下图：
-<img src="pic/OS_WOL.png" alt="Windows SETTING"></p>
+<img src="/pic/OS_WOL.png" alt="Windows SETTING"></p>
 <h2 id="安全&amp;应用">安全&amp;应用</h2><p>Lan是相对安全的，路由器可以通过MAC过滤，不要泄漏你的MAC等信息。这个仅能开机和关机，对于几乎不会关机的服务器来说，开机没什么不安 全的。（确保你的PC像服务器那样安全）
 最佳应用是用在托管机房的远程开机，我们机房的测试机等也可以采用……</p>
 <h1 id="总结">总结</h1><p>本文从手机发出UDP包，简述了远程开机原理及实现，如果你需要配置远程开机，可能需要将整个过程倒过来，先在局域网内广播唤醒，最后用手机数据 流量或其他电脑远程唤醒(开机或从待机欢迎)。</p>

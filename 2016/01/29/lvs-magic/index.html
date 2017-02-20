@@ -15,8 +15,8 @@ Try VM again一切正常，一切正常">
 <meta property="og:description" content="lvs是网络负载均衡常用的一种方式，然而今天的重点并不是lvs，而是一个隐含的坑……
 Error打开网页报表页面，显示有问题。然后是(firefox+chrome)*2，四种模式访问都有问题！注：四种模式——乘2是使用隐私模式，no cache，no cookies …，这个是相对清空浏览器缓存一种优雅的方式，还有一种是不清空强制刷新Ctrl+F5方式。
 Try VM again一切正常，一切正常">
-<meta property="og:image" content="pic/My-Add-ons.png">
-<meta property="og:image" content="pic/add-ons-disable.png">
+<meta property="og:image" content="/pic/My-Add-ons.png">
+<meta property="og:image" content="/pic/add-ons-disable.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lvs bug">
 <meta name="twitter:description" content="lvs是网络负载均衡常用的一种方式，然而今天的重点并不是lvs，而是一个隐含的坑……
@@ -128,9 +128,9 @@ Try VM again一切正常，一切正常">
 <h2 id="error">Error</h2><p>打开网页报表页面，显示有问题。然后是(firefox+chrome)*2，四种模式访问都有问题！注：四种模式——乘2是使用隐私模式，no cache，no cookies …，这个是相对清空浏览器缓存一种优雅的方式，还有一种是不清空强制刷新Ctrl+F5方式。</p>
 <h2 id="try-vm-again">Try VM again</h2><p>一切正常，一切正常有没有。。。</p>
 <h3 id="add-ons">add-ons</h3><p>是插件作怪么，<a href="about:addons">Firefox addons</a>/<a href="chrome://extensions/">chrome extensions</a>，共同的插件没几个，晒图一张吧(仅Enable的插件)：
-<img src="pic/My-Add-ons.png" alt="suggest add-ons">
+<img src="/pic/My-Add-ons.png" alt="suggest add-ons">
 既然说到了插件，说说优雅排查插件问题的方法（禁用插件重启），如图：
-<img src="pic/add-ons-disable.png" alt="disable add-ons restart"></p>
+<img src="/pic/add-ons-disable.png" alt="disable add-ons restart"></p>
 <h2 id="…">…</h2><p>浏览器debug，日志错误之类，此处略过半小时…</p>
 <h3 id="lvs">lvs</h3><p>时间刚好，wanglei5来上班了，王哥来瞅瞅：你的web有没有lvs...
 先是堡垒机前置机远程桌面，分别访问了两个不同地址，果然问题在这里。然后堡垒机登录有问题那台机器后台，上代码：</p>

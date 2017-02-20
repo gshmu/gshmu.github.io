@@ -21,11 +21,11 @@ Debug Configurations先上图：
 
 1： 这是一个django服务的示例
 2： 选择的">
-<meta property="og:image" content="pic/Run-Debug-Configurations.png">
-<meta property="og:image" content="pic/Settings_add.png">
-<meta property="og:image" content="pic/Configure-Remote-Python-Interpreter.png">
-<meta property="og:image" content="pic/Configure-Server.png">
-<meta property="og:image" content="pic/Remote_File.png">
+<meta property="og:image" content="/pic/Run-Debug-Configurations.png">
+<meta property="og:image" content="/pic/Settings_add.png">
+<meta property="og:image" content="/pic/Configure-Remote-Python-Interpreter.png">
+<meta property="og:image" content="/pic/Configure-Server.png">
+<meta property="og:image" content="/pic/Remote_File.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="remote debugger">
 <meta name="twitter:description" content="你没有看错，Python Remote Debugger with PyCharm！本文是基于Python IDE：PyCharm，主要介绍 Remote Debugger 的在 PyCharm 中的配置使用，本文希望传递一个消息，远程是可在IDE调试的，也希望大家能在以后的工作中调试起来…。
@@ -138,7 +138,7 @@ Debug Configurations先上图：
       
         <div id="toc"><span class="toc-header">Contents</span><ol class="article-toc"><li class="article-toc-item article-toc-level-2"><a class="article-toc-link" href="#debug-configurations"><span class="article-toc-text">Debug Configurations</span></a><ol class="article-toc-child"><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#ssh"><span class="article-toc-text">SSH</span></a></li><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#remote-interpreter"><span class="article-toc-text">Remote Interpreter</span></a></li><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#config-mapping-etc"><span class="article-toc-text">config mapping etc</span></a></li></ol></li><li class="article-toc-item article-toc-level-2"><a class="article-toc-link" href="#linux"><span class="article-toc-text">Linux</span></a><ol class="article-toc-child"><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#sshfs"><span class="article-toc-text">sshfs</span></a></li><li class="article-toc-item article-toc-level-3"><a class="article-toc-link" href="#windows"><span class="article-toc-text">Windows</span></a></li></ol></li><li class="article-toc-item article-toc-level-2"><a class="article-toc-link" href="#总结"><span class="article-toc-text">总结</span></a></li></ol></div><p>你没有看错，Python Remote Debugger with PyCharm！本文是基于Python IDE：<a href="https://www.jetbrains.com/pycharm/">PyCharm</a>，主要介绍 Remote Debugger 的在 PyCharm 中的配置使用，本文希望传递一个消息，<strong>远程是可在IDE调试的</strong>，也希望大家能在以后的工作中调试起来…。</p>
 <h2 id="debug-configurations">Debug Configurations</h2><p>先上图：
-<img src="pic/Run-Debug-Configurations.png" alt="Debug Configurations"></p>
+<img src="/pic/Run-Debug-Configurations.png" alt="Debug Configurations"></p>
 <ul>
 <li>1： 这是一个django服务的示例</li>
 <li>2： 选择的是服务器（Remote）运行环境interpreter</li>
@@ -146,11 +146,11 @@ Debug Configurations先上图：
 </ul>
 <h3 id="ssh">SSH</h3><p>SSH最基本的通讯协议，服务器和测试服务器没有不开的吧。</p>
 <h3 id="remote-interpreter">Remote Interpreter</h3><p>Interpreter 解释器，使用python的对虚拟环境<code>virtualenv</code>应该都不陌生，我们首先需要一个和服务器一样的运行环境。
-<img src="pic/Settings_add.png" alt="Setting add Interpreter">
+<img src="/pic/Settings_add.png" alt="Setting add Interpreter">
 按照顺序操作到4，点击Add Remote(如下图)，SSH配置完点OK。
-<img src="pic/Configure-Remote-Python-Interpreter.png" alt="Configure Remote Python Interpreter">
+<img src="/pic/Configure-Remote-Python-Interpreter.png" alt="Configure Remote Python Interpreter">
 初次连接可能弹出提醒，确认即可，然后会回到设置主界面，切记点击<strong>Apply</strong>和<strong>OK</strong>。</p>
-<h3 id="config-mapping-etc">config mapping etc</h3><p><img src="pic/Configure-Server.png" alt="Configure Server">
+<h3 id="config-mapping-etc">config mapping etc</h3><p><img src="/pic/Configure-Server.png" alt="Configure Server">
 单击向下的那个箭头，然后编辑配置，就回到了最开始那个图，配置好后用debug方式启动就可以远程调试了，吼吼</p>
 <h2 id="linux">Linux</h2><p>远程调试已经完了，你可以很方便的在你本地以调试方式启动服务，在本地设置断点，然后使用服务器ip访问，捕获到断点是不成问题的，修改代码，PyCharm 也有同步的功能，但我还是喜欢下面的~</p>
 <h3 id="sshfs">sshfs</h3><p>Linux，所以直接挂载测试服务器文件：
@@ -159,7 +159,7 @@ Debug Configurations先上图：
 附：取消挂载的命令<code>$ fusermount -u $point</code></p>
 <h3 id="windows">Windows</h3><p>感谢<code>永哥</code>，在windows下实现了，给大家扫雷了。在用户目录下新建<code>.ssh</code>文件夹和<code>known_hosts</code>文件，不然远程环境会无法建立。
 虽然用不了sshfs，但是可以sftp的，配置远程文件时，需要明确选下如图，虽然选后路径不变:
-<img src="pic/Remote_File.png" alt="Remote Host File">
+<img src="/pic/Remote_File.png" alt="Remote Host File">
 不选的话，远程文件可能不识别，识别后远程文件显示为绿色。</p>
 <h2 id="总结">总结</h2><p>本文希望能传递一个消息：<strong>远程是可调试的！</strong>希望大家以后能用起来，以后如何用好还请大家思考。最后，欢迎任何反馈。</p>
 
