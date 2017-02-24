@@ -616,7 +616,7 @@ SDKadb（Android Debug Bridge），Win下面一般装个驱动，下载exe就可
 
 <p>可恶的Windows占用了两个主分区，一个是所谓的boot。我把Linux装到了逻辑分区，这个无所谓了，grub大叔能叫起床就OK了。（sda3是逻辑分区的标识，Linux我只分了两个，还预留了200G的空白分区，备用）</p>
 <h2 id="win">Win</h2><p>我不用Windows系统，一直都是Ubuntu一个系统，最多考试什么需要IE的场合用下。然而有一天，小鬼（一个不支持Linux的所谓互联网大公司，不支持也就罢了，源里还有个不能用的软件拉嘲讽）作祟，Web版本也不让用了，开源大神一度辛苦抓包维护的pidgin插件lwqq不能用了。
-最不折腾的方案是虚拟机了，然而我一个懒人，懒得下镜像，懒得装盗版系统，懒得下直接下不确定安全的vmdk/vdi文件用，就想用现成的系统。有句话叫：没有最不到，只有想不到。虚拟的磁盘文件都可以，然而我有真的，不用白不用。</p>
+最不折腾的方案是虚拟机了，然而我一个懒人，懒得下镜像，懒得装盗版系统，懒得下直接下不确定安全的vmdk/vdi文件用，就想用现成的系统。有句话叫：没有做不到，只有想不到。虚拟的磁盘文件都可以，然而我有真的，不用白不用。</p>
 <h3 id="折腾">折腾</h3><p>我最不喜欢折腾，Linux下我不会在乎系统多起个服务进程的，但是Windows没用的开机启动，用不着的服务关一个少一个，少一个系统就少一份维护。我真的最不喜欢折腾，软件都是直接装源里的，除非有bug不想忍时才偶尔编译安装新版本。</p>
 <h2 id="开工">开工</h2><p>首先创建一个类似链接文件的虚拟机磁盘文件，命令如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vboxmanage internalcommands createrawvmdk -filename /path/to/new/vmlink/file/W<span class="keyword">in</span>7HD.vmdk -rawdisk /dev/sda -partitions <span class="number">1</span>,<span class="number">2</span> -mbr /path/to/mbr/win7.mbr -relative</div></pre></td></tr></table></figure>
